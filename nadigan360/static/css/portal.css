@@ -1,0 +1,1028 @@
+/***** main *****/
+html { height: 100%; background: #222222 url(../../../img/redesign-2012/portal/portal-seamless-bg.jpg) top left repeat; }
+body { margin: 0; padding: 0; border: none; background: url("../../../img/redesign-2012/portal/portal-top-seamless-bg.jpg") repeat-x scroll left top transparent/*#222222 url(../../../img/redesign-2012/portal/portal-seamless-bg.jpg) top left repeat*/; font: normal 12px Arial, Helvetica, sans-serif; color: #262626; }
+table, tr, td, input, textarea, select { font: normal 12px Arial, Helvetica, sans-serif; color: #262626; }
+form, img { margin: 0; padding: 0; border: none; background: none; }
+a { color: #BD0608; text-decoration: none; }
+a:hover { color: #F00; }
+p { margin: 15px 0px 15px 0px; }
+/*h1 { margin: 15px 0px 15px 0px; padding: 0; border: none; background: none; font-size: 24px; }*/
+h2 { margin: 15px 0px 15px 0px; padding: 0; border: none; background: none; font-size: 20px; }
+h3 { margin: 15px 0px 15px 0px; padding: 0; border: none; background: none; font-size: 16px; }
+h4 { margin: 15px 0px 15px 0px; padding: 0; border: none; background: none; font-size: 16px; }
+
+/***** custom *****/
+div.clear { clear: both; margin: 0; padding: 0; border: none; background: none; height: 0px; line-height: 0px; font-size: 0px; }
+div.hr { margin: 15px 0px 15px 0px; padding: 0; border: none; background: #666; height: 1px; line-height: 1px; font-size: 1px; }
+
+/***** bg *****/
+div.wrapper > div.shadows { position: absolute; left: 50%; z-index: -10; width: 1306px; height: 100%; margin: 0px 0px 0px -653px; background: url(http://www.joblo.com/img/redesign-2012/wrapper-bg-portal.png) top left repeat-y; }
+
+/***** header *****/
+div.wrapper > div.header { margin: 0; padding: 0; border: none; background: none; }
+div.wrapper > div.header > div.inner { position: relative; margin: 0 auto; padding: 0; border: none; background: none; width: 100%; }
+
+/***** header advertisement *****/
+div.wrapper > div.header > div.inner > div.section.advertisement-top { background: none transparent; height: 100px; padding-top:10px; }
+div.wrapper > div.header > div.inner > div.section.advertisement-top > div.advertisement {margin: 0px auto; width:728px; height:90px;}
+
+/***** header main *****/
+div.wrapper > div.header > div.inner > div.section.main { position: relative; height: 100px; background: url(../../../img/redesign-2012/portal/top/portal-header-bg.jpg) top left no-repeat; }
+div.wrapper > div.header > div.inner > div.section.main > a.logo { position: absolute; bottom: 0px; left: 0px; width: 282px; height: 110px;  background: url(../../../img/redesign-2012/portal/top/portal-logo.png) top left no-repeat; }
+
+/***** header nav1 *****/
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 { font-family: "Oswald", Arial, sans-serif; font-weight: normal; color: #000000; overflow: hidden; width:738px; position:absolute; top:20px; left:290px; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > a { float: left; height: 29px; line-height: 29px; font-size: 15px; font-weight: normal; color: #000000; text-decoration: none; text-align: center; text-transform: uppercase; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > a:hover { color: #B20609; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > span { float: left; width: 2px;margin:0px 17px; height: 29px; line-height: 1px; font-size: 1px; background: url(../../../img/redesign-2012/portal/top/portal-nav-line.png) top left no-repeat;  }
+
+
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > a.nav1 { margin-left:15px; }
+/*
+div.wrapper > div.header > div.inner > div.section.main > div.section.nav1 > a.nav2 { width: 140px; }
+div.wrapper > div.header > div.inner > div.section.main > div.section.nav1 > a.nav3 { width: 110px; }
+div.wrapper > div.header > div.inner > div.section.main > div.section.nav1 > a.nav4 { width: 150px; }
+div.wrapper > div.header > div.inner > div.section.main > div.section.nav1 > a.nav5 { width: 105px; }
+div.wrapper > div.header > div.inner > div.section.main > div.section.nav1 > a.nav6 { width: 150px; }
+*/
+
+/***** header nav2 *****/
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 { height: 36px; line-height: 36px; padding: 0px; color: #FFF; overflow: hidden; font-family: "Oswald", Arial, sans-serif; font-weight: normal; text-align: center; width:728px;top: 50px; left: 290px; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 a { display: inline-block; vertical-align: top; padding: 0; font-size: 13px; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; zoom: 1; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 a:hover { color: #cccccc; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 > div.left { float: left; margin: 0px 0px 0px 15px; text-transform: uppercase; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 > div.left > span.header { color: #fff; margin: 0px 5px 0px 0px; }
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 > div.left > span.divider { margin: 0px 5px; color: #ffffff;width: 4px; line-height: 12px; font-size: 12px; zoom: 1; display: inline; }
+
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side {height: 23px;}
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > a { float: left; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > a > img { vertical-align: top; margin: 0px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > a.twitter { margin: 0px 0px 0px 10px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > a.facebook { margin: 0px 0px 0px 10px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > span { float: left; margin: 0px 0px 0px 10px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > div.fb-like {}
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > div.google-plus {float: left; height: 20px; line-height: 20px; margin: 0px; width:80px;}
+div.wrapper > div.body > div.inner > div.column.side > div.section.social-side > div.follow-twitter {float:right;margin:0px;}
+
+/***** header features *****/
+div.wrapper > div.header > div.inner > div.section.features { position: relative; padding: 8px 64px 4px 64px; background: #262626; }
+div.wrapper > div.header > div.inner > div.section.features > a.nav { position: absolute; top: 87px; width: 25px; height: 58px; background: none top left no-repeat; }
+div.wrapper > div.header > div.inner > div.section.features > a.nav.left { left: 25px; background-image: url(http://www.joblo.com/img/redesign-2012/header-feature-arrow-left.png); }
+div.wrapper > div.header > div.inner > div.section.features > a.nav.right { right: 25px; background-image: url(http://www.joblo.com/img/redesign-2012/header-feature-arrow-right.png); }
+div.wrapper > div.header > div.inner > div.section.features > a.nav:hover { background-position: 0px -58px; }
+div.wrapper > div.header > div.inner > div.section.features > div.container { }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell { float: left; position: relative; width: 220px; height: 220px; margin: 0px 0px 0px 12px; color: #FFF; background: url(http://www.joblo.com/img/redesign-2012/header-feature-cell-bg.png) top left no-repeat; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a { display: block; width: 100%; height: 100%; color: #FFF; text-decoration: none; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > img { position: absolute; top: 8px; left: 10px; width: 200px; height: 200px; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > span.tag { position: absolute; top: 8px; left: 10px; z-index: 30; padding: 0px 7px 0px 7px; background: #9E0507; line-height: 20px; font-size: 11px; font-weight: normal; color: #FFF; text-transform: uppercase; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > span.overlay { position: absolute; top: 8px; left: 10px; z-index: 20; width: 200px; height: 200px; background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > span.shadow { position: absolute; bottom: 12px; left: 10px; z-index: 10; width: 100%; height: 98px; background: url(http://www.joblo.com/img/redesign-2012/header-feature-shadow.png) bottom left no-repeat; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > span.text { position: absolute; bottom: 22px; left: 20px; right: 20px; z-index: 30; line-height: 18px; font-family: "Oswald", Arial, sans-serif; font-size: 14px; font-weight: normal; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a > span.text > span { font-size: 16px; font-weight: normal; }
+div.wrapper > div.header > div.inner > div.section.features > div.container > div.cell > a:hover > span.overlay { background: none; }
+
+/***** body *****/
+div.wrapper > div.inner { margin: 0 auto; padding: 0; border: none; background: #ececec; width: 100%; }
+div.wrapper > div.inner > div.column { float: left; margin: 0px 0px 0px 16px; }
+div.wrapper > div.inner > div.column.full { width: 1012px; }
+div.wrapper > div.inner > div.column.main { width: 680px; }
+div.wrapper > div.inner > div.column.side { width: 300px; padding: 8px 8px 8px 8px; background: #ECECEC; }
+
+/***** main *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section { margin: 10px 0px 0px 0px; padding: 12px 12px 12px 12px; background: #FFF; }
+
+div.wrapper > div.body > div.inner > div.column.main > div.section.features {min-height: 222px; max-height: 222px; overflow:hidden; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews {min-height: 232px; max-height: 232px; overflow:hidden; }
+
+
+div.wrapper > div.body > div.inner > div.column.main > div.section:first-child { margin-top: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header { height: 20px; line-height: 20px; color: #000; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > span,
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > h2,
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > h3,
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > h4,
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > h5,
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > h6 { display: inline; margin: 0; font-family: "Oswald", Arial, sans-serif; font-size: 18px; font-weight: normal; text-transform: uppercase; float:left; width: 500px !important; }
+
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > span,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > h2,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > h3,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > h4,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > h5,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.header > h6 { display: inline; margin: 0; font-family: "Oswald", Arial, sans-serif; font-size: 18px; font-weight: normal; text-transform: uppercase; float:left; width: 230px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > span,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > h2,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > h3,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > h4,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > h5,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.header > h6 { display: inline; margin: 0; font-family: "Oswald", Arial, sans-serif; font-size: 18px; font-weight: normal; text-transform: uppercase; float:left; width: 230px !important; }
+
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > a.more { float: right; line-height: 22px; font-size: 11px; font-weight: normal; color: #B20609; text-decoration: none; text-transform: uppercase; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.header > a.more:hover { color: #F00; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content { position: relative; margin: 10px 0px 0px 0px; color: #363636; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row { margin: 10px 0px 0px 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row:first-child { margin-top: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell { float: left; position: relative; margin: 0; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a { display: block; width: 100%; height: 100%; color: #363636; text-decoration: none; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a:hover { color: #B20609; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a > img { display: block; width: 100%; height: auto; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a > span.overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: auto; background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > div.row > div.cell > a:hover > span.overlay { background: none; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > a.nav { position: absolute; top: 0px; z-index: 100; width: 25px; height: 86px; background: none top left no-repeat; }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > a.nav.left { left: -12px; background-image: url(http://www.joblo.com/img/redesign-2012/portal/main-section-nav-left.png); }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > a.nav.right { right: -12px; background-image: url(http://www.joblo.com/img/redesign-2012/portal/main-section-nav-right.png); }
+div.wrapper > div.body > div.inner > div.column.main > div.section > div.content > a.nav:hover { background-position: 0px -86px; }
+
+/***** main slideshow *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow { position: relative; padding: 0; height: 258px; background: #666; margin:0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.images { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.images > div.image { display: none; position: absolute; top: 0px; left: 0px; width: 479px; height: 100%; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.images > div.image > a { position: absolute; top: 0px; left: 0px; width: 479px; height: 100%; }/**/
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.images > div.image > a > img { position: absolute; top: 0px; left: 0px; width: 479px; height: 100%; }/**/
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav { position: absolute; top: 0px; right: 0px; width: 247px; height: 258px; font-family: "Oswald", Arial, sans-serif; font-weight: normal; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > div.link { display: block; margin: 0px 0px 0px 47px; padding: 0px 15px 0px 15px; border-top: 1px solid #383838; width: 170px; height: 47px; background: #242424; color: #FFF; overflow: hidden; }
+/**/
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a { display: block; margin: 0px 0px 0px 47px; padding: 0px 15px 0px 15px; border-top: 1px solid #383838; width: 170px; height: 47px; background: #242424; color: #FFF; overflow: hidden; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a:first-child { border-top: none; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a > span { display: block; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a > span.main { margin: 13px 0px 0px 0px; max-height: 28px; line-height: 14px; font-size: 12px; text-transform: uppercase; overflow: hidden; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a > span.sub { display: none; margin: 2px 0px 0px 0px; max-height: 16px; line-height: 16px; font-size: 11px; overflow: hidden; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a.current { margin-left: 0px; border: none; width: 200px; height: 66px; padding: 0px 10px 0px 37px; background: url(http://www.joblo.com/img/redesign-2012/portal/slideshow-nav-current.png) top left no-repeat; color: #FFF; overflow: hidden; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a.current > span.main { margin-top: 13px; max-height: 32px; line-height: 16px; font-size: 13px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.slideshow > div.nav > a.current > span.sub { display: block; }
+
+/***** main search *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.search { padding: 0px 10px 0px 10px; border: 1px solid #A4090B; background: #A4090B; height: 34px; line-height: 34px; font-family: "Oswald", Arial, sans-serif; font-weight: normal; color: #FFF; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > h1 { float: left; margin: 0; font-size: 16px; font-weight: normal; text-transform: uppercase; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right { float: right; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right > form { float: left; margin: 5px 0px 0px 0px; width: 166px; height: 22px; border: 1px solid #D2D2D2; background: #FFF; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right > form > div { float: left; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right > form > div > input[type="text"] { float: left; margin: 0 0 0 5px; padding: 0px 5px 0px 5px !important; border: none !important; background: none !important; width: 130px; height: 22px; line-height: 20px; outline: none !important; color: #000000; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right > form > div > input[type="submit"] { float: right; margin: 3px 4px 0px 0px; padding: 0; border: none; width: 16px; height: 16px; cursor: pointer; outline: none; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.search > div.right > a.rss { float: left; margin: 5px 0px 0px 10px; width: 24px; height: 24px;  }
+
+/***** main features *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.features > div.content > div.row > div.cell { width: 158px; margin-left: 8px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.features > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.features > div.content > div.row > div.cell > a > img { width: 158px; height: 158px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.features > div.content > div.row > div.cell > a > span.overlay { width: 158px; height: 158px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.features > div.content > a.nav { top: 36px; }
+
+/***** main videos *****/
+div.section.videos > div.content { position: static !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.videos > div.content > div.row > div.cell { width: 214px; margin-left: 7px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.videos > div.content > div.row > div.cell:first-child { margin-left: 0px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.videos > div.content > div.row > div.cell > a > img { width: 214px; height: 122px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.videos > div.content > div.row > div.cell > a > span.overlay { width: 214px; height: 122px; }
+
+/***** main reviews *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews > div.content > div.row > div.cell { width: 124px; margin-left: 9px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews > div.content > div.row > div.cell > a > img { width: 124px; height: 186px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews > div.content > div.row > div.cell > a > span.overlay { width: 124px; height: 186px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.reviews > div.content > a.nav { top: 50px; }
+ul#movie-reviews {height:208px;}
+
+/***** main releases *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.releases > div.content > div.row > div.cell { width: 124px; margin-left: 9px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.releases > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.releases > div.content > div.row > div.cell > a > img { width: 124px; height: 174px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.releases > div.content > div.row > div.cell > a > span.overlay { width: 124px; height: 174px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.releases > div.content > a.nav { top: 44px; }
+div.content > ul#dvd-reviews {height: 205px; margin: 0 9px 0 0; padding: 0;overflow: hidden;}
+div.content > ul#dvd-reviews li {display: block; float:left; width:124px;margin:0px;padding:0px;height:205px;}
+div.content > ul#dvd-reviews li a {}
+div.content > ul#dvd-releases {height: 205px; margin: 0 9px 0 0; padding: 0;overflow: hidden;}
+div.content > ul#dvd-releases li {display: block; float:left; width:124px;margin:0px;padding:0px;height:205px;}
+div.content > ul#dvd-releases li a {}
+
+/***** main galleries *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.galleries > div.content > div.row > div.cell { width: 158px; margin-left: 8px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.galleries > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.galleries > div.content > div.row > div.cell > a > img { width: 158px; height: 206px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.galleries > div.content > div.row > div.cell > a > span.overlay { width: 158px; height: 206; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.galleries > div.content > a.nav { top: 66px; }
+div.content > ul#movie-hotties {height: 245px; margin: 0; padding: 0;overflow: hidden;}
+div.content > ul#movie-hotties li {display: block; float:left; width:163px;margin:0px;padding:0px;height:245px;}
+div.content > ul#movie-hotties li a {}
+
+/***** main popular *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.popular > div.content > div.row > div.cell { width: 124px; margin-left: 9px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.popular > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.popular > div.content > div.row > div.cell > a > img { width: 124px; height: 186px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.popular > div.content > div.row > div.cell > a > span.overlay { width: 124px; height: 186px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.popular > div.content > a.nav { top: 50px; }
+div.content > ul#most-popular {height: 205px; margin: 0; padding: 0;overflow: hidden;}
+div.content > ul#most-popular li {display: block; float:left; width:131px;margin:0px;padding:0px;height:205px;}
+div.content > ul#most-popular li a {}
+
+/***** main posters *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.posters > div.content > div.row > div.cell { width: 158px; margin-left: 8px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.posters > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.posters > div.content > div.row > div.cell > a > img { width: 158px; height: 234px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.posters > div.content > div.row > div.cell > a > span.overlay { width: 158px; height: 234px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.posters > div.content > a.nav { top: 74px; }
+div.content > ul#movie-posters {height: 245px; margin: 0; padding: 0;overflow: hidden;}
+div.content > ul#movie-posters li {display: block; float:left; width:163px;margin:0px;padding:0px;height:245px;}
+div.content > ul#movie-posters li a {}
+
+/***** main interviews *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.interviews > div.content > div.row > div.cell { width: 214px; margin-left: 7px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.interviews > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.interviews > div.content > div.row > div.cell > a > img { width: 214px; height: 122px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.interviews > div.content > div.row > div.cell > a > span.overlay { width: 214px; height: 122px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.interviews > div.content > a.nav { top: 40px; }
+div.content > ul#interviews {height: 205px; margin: 0; padding: 0;overflow: hidden;}
+div.content > ul#interviews li {display: block; float:left; width:163px;margin:0px;padding:0px;height:205px;}
+div.content > ul#interviews li a {}
+
+/***** main database *****/
+div.wrapper > div.body > div.inner > div.column.main > div.section.database > div.content > div.row > div.cell { width: 158px; margin-left: 8px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.database > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.database > div.content > div.row > div.cell > a > img { width: 158px; height: 206px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.database > div.content > div.row > div.cell > a > span.overlay { width: 158px; height: 206px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.database > div.content > a.nav { top: 74px; }
+div.content > ul#celebrity {height: 245px; margin: 0; padding: 0;overflow: hidden;}
+div.content > ul#celebrity li {display: block; float:left; width:163px;margin:0px;padding:0px;height:245px;}
+div.content > ul#celebrity li a {}
+
+/***** main podcasts *****/
+div.section.podcasts > div.content { position: static !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts { float: left; width: 312px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.cell { width: 152px; margin-left: 8px;height: 195px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.podcast3 { margin-left: 0px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.podcast3,
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.podcast4 { height: 190px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.cell > a > img { width: 152px; height: 152px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.podcasts > div.content > div.row > div.cell > a > span.overlay { width: 152px; height: 152px; }
+
+/***** main images *****/
+div.section.images > div.content { position: static !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images { float: left; width: 312px; margin-left: 8px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.cell { width: 152px; margin-left: 8px;height: 195px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.image3 { margin-left: 0px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.image3,
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.image4 { height: 190px !important; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.cell > a > img { width: 152px; height: 152px; }
+div.wrapper > div.body > div.inner > div.column.main > div.section.images > div.content > div.row > div.cell > a > span.overlay { width: 152px; height: 152px; }
+
+/***** side *****/
+div.wrapper > div.body > div.inner > div.column.side > div.section { margin: 16px 0px 0px 0px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section:first-child { margin-top: 0px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header { margin: 0; padding: 0px 10px 5px 10px; line-height: 20px; font-family: "Oswald", Arial, sans-serif; font-size: 18px; font-weight: normal; color: #000; text-transform: uppercase; }
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > h2,
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > h3,
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > h4,
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > h5,
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > h6 { display: inline; margin: 0; font-size: 18px; font-weight: normal; }
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > a.more { float: right; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #DC090B; text-decoration: none; text-shadow: none; }
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.header > a.more:hover { color: #F00; }
+div.wrapper > div.body > div.inner > div.column.side > div.section > div.body { background: #FFF; }
+
+/***** side advertisement *****/
+div.wrapper > div.body > div.inner > div.column.side > div.section.advertisement img { vertical-align: top; }
+
+/***** side headlines *****/
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body { background: none; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu { display: block; margin: 0; padding: 0; border: none;border-bottom: 1px solid #D8D8D8;/*  */background: none; list-style: none; height: 20px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li { float: left; margin: 0px 0px 0px 2px; padding: 0; border: none; background: none; list-style: none; height:20px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li.home { margin-left: 0px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li > a { display: block; width: 62px; height: 18px; line-height: 18px; padding-bottom:0px; color: #000; font-size: 11px; font-weight: bold; text-decoration: none; text-transform: uppercase; text-align: center; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li.home > a { width: 34px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li > a:hover { border-color: #DFDFDF; background-color: #DFDFDF; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li.home > a { background-image: url(http://www.joblo.com/img/redesign-2012/portal/icon-home-10x10.png); background-position: center center; background-repeat: no-repeat; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.menu > li.current > a { height: 20px; line-height: 20px; background: #fff; /* background: url("../../../img/redesign-2012/portal/portal-tab.png") no-repeat scroll 50% 21px transparent; */  }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content { display: block; margin: 0; padding: 1px 0px 10px 0px; border: 1px solid #D8D8D8; border-top: none; background: #FFF; list-style: none; }
+/* div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li { display: none; } */
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.bookmark { margin: 12px 12px 0px 12px; padding: 0px 0px 6px 0px; border-bottom: 1px solid #C1C1C1; height: 15px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.bookmark > form { margin: 0; padding: 0; border: none; background: none; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.bookmark > form > p.input_p { margin: 0; padding: 0; border: none; background: none; vertical-align: top; float:left; width:15px; display:block; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.bookmark > form > p.input_p > input[type="checkbox"] { margin: 0; padding: 0; border: none; background: none; vertical-align: top; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.bookmark > form > p.bookmark { float:right; width:250px; display:block;margin: 0px 0px 0px 5px; padding: 0; border: none; background: none; color: #808080; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row { /* clear:both; */ margin: 0; margin: 10px 12px 0px 12px; border: none; background: none; min-height: 50px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a {  width: 280px; min-height: 50px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.image { float: left; width: 50px; height: 50px; display:block; position:relative; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.image span.overlay { position: absolute; top: 0px; left: 0px; height: 50px; width: 50px; background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a:hover span.image span.overlay { background: none; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.image img { display: block; width: 50px; height: 50px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.content { margin: 3px 0px 0px 7px; color: #262626; width:215px; float:left; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.content > span.header { color: #363636; font-weight: bold; display:block; font-size:12px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a:hover span.content > span.header { color: #B20609; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.content > span.links { margin: 2px 0px 0px 0px;font-size: 10px; color: #8e0507; text-decoration: none; text-transform: uppercase; display:block; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a:hover span.content > span.links { /*color: #F00;*/  }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row > a span.content > span.links > span { margin: 0px 5px 0px 0px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row.odd { background-color: #FFF; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.headlines > div.body > div.tabs > ul.content > li > div.row.even { background-color: #F5F5F5; }
+
+/***** side boxoffice *****/
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body { padding: 4px 4px 4px 4px; border: 1px solid #D8D8D8; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table { margin: 0; padding: 0; border: none; background: none; border-collapse: collapse; width: 100%; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > thead > tr > th { margin: 0; padding: 6px 0px 6px 6px; border: none; background: none; border-bottom: 1px solid #DCDDDC; text-align: center; vertical-align: middle; font-size: 10px; font-weight: bold; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > thead > tr > th.date { font-size: 12px; text-align: left; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > thead > tr > th.last { padding-right: 6px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td { margin: 0; padding: 6px 0px 6px 6px; border: none; background: none; text-align: center; vertical-align: middle; font-size: 11px; font-weight: normal; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.image { padding-left: 6px; width: 28px; min-height: 28px; background: url(http://www.joblo.com/img/redesign-2012/portal/side-boxoffice-number-bg-gray.png) center right no-repeat; font-size: 11px; font-weight: bold; color: #FFF; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.title { padding-left: 6px; font-size: 12px; font-weight: bold; text-align: left; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.title > a { font-weight: normal;color: #363636; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.title > a:hover { font-weight: normal;color: #B20609; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.last { padding-right: 6px; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr > td.td_more { text-align: left; font-weight:bold;}
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr.odd > td { background-color: #FFF; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tbody > tr.even > td { background-color: #F5F5F5; }
+div.wrapper > div.body > div.inner > div.column.side > div.section.boxoffice > div.body > table > tfoot > tr > th { margin: 0; padding: 10px 6px 4px 6px; border: none; background: none; border-top: 1px solid #DCDDDC; text-align: right; vertical-align: middle; font-size: 11px; font-weight: bold; text-transform: uppercase; }
+
+/***** footer *****/
+div.wrapper > div.footer { margin: 0; padding: 0; border: none; background: none; }
+div.wrapper > div.footer > div.inner { margin: 0 auto; padding: 0; border: none; background: none; width: 100%; color: #FFF; }
+div.wrapper > div.footer > div.inner a { color: #FFF; }
+div.wrapper > div.footer > div.inner > div.section { margin: 0; padding: 0; border: none; background: none; }
+
+/***** footer mfc *****/
+div.wrapper > div.footer > div.inner > div.section.mfc { height: 60px; line-height: 60px; padding: 0px 35px 0px 35px; background: url(http://www.joblo.com/img/redesign-2012/portal/mfc-bg.png) top left repeat-x; }
+div.wrapper > div.footer > div.inner > div.section.mfc > a.join { float: right; margin: 16px 0px 0px 0px; width: 88px; height: 28px; background: url(http://www.joblo.com/img/redesign-2012/portal/mfc-btn-join.png) top left no-repeat; }
+div.wrapper > div.footer > div.inner > div.section.mfc > a.join:hover { background-position: 0px -28px; }
+div.wrapper > div.footer > div.inner > div.section.mfc > span.section1 { float: left; margin: 12px 0px 0px 0px; width: 233px; height: 36px; background: url(http://www.joblo.com/img/redesign-2012/portal/mfc-logo.png) top left no-repeat; }
+div.wrapper > div.footer > div.inner > div.section.mfc > span.section2 { float: left; margin: 16px 0px 0px 25px; padding: 0px 0px 0px 42px; width: 233px; height: 28px; line-height: 28px; /*background: url(http://www.joblo.com/img/redesign-2012/portal/mfc-icon-tv.png) top left no-repeat; font-family: "Oswald", Arial, sans-serif; font-weight: normal; font-size: 18px; white-space: nowrap;*/ }
+div.wrapper > div.footer > div.inner > div.section.mfc > span.section2 > a { color: #FFF; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.mfc > span.section2 > a:hover { color: #262626; }
+div.wrapper > div.footer > div.inner > div.section.mfc > span.section2 > span { margin: 0px 15px 0px 15px; }
+
+/***** footer section1 *****/
+div.wrapper > div.footer > div.inner > div.section.section1 { padding: 15px 39px 15px 39px; background: #8E0507; color: #FFF; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column { float: left; width: 198px; margin: 0px 0px 0px 56px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column:first-child { margin-left: 0px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.head { font-family: "Oswald", Arial, sans-serif; font-weight: normal; padding: 0px 0px 12px 0px; background: url(http://www.joblo.com/img/redesign-2012/portal/footer-section1-hr.png) bottom left repeat-x; font-size: 15px; font-weight: normal; text-transform: uppercase; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body { padding: 0px 0px 12px 0px; background: url(http://www.joblo.com/img/redesign-2012/portal/footer-section1-hr.png) bottom left repeat-x; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row { margin: 10px 10px 0px 10px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell { float: left; width: 80px; margin: 0px 0px 0px 18px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell:first-child { margin-left: 0px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell > a { display: block; font-size: 11px; color: #FFF; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell > a > img { display: block; width: 80px; height: 80px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell > a > span.title { display: block; margin: 2px 0px 0px 0px; height: 14px; line-height: 14px; overflow: hidden; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell > a:hover { color: #262626; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.body > div.row > div.cell > div.hr { margin: 0; background: #0F0 }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.foot { margin: 10px 0px 0px 0px; text-align: right; text-transform: uppercase; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.foot > a { display: inline-block; background: url(http://www.joblo.com/img/redesign-2012/portal/footer-section1-foot-arrow.png) 0px 3px no-repeat; padding: 0px 0px 0px 9px; line-height: 12px; font-size: 10px; font-weight: bold; color: #FFFFFF; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column > div.foot > a:hover { color: #CCCCCC; }
+
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body { padding: 0px 0px 7px 0px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row { margin: 7px 0px 0px 0px; padding: 8px 0px 0px 0px; background: url(http://www.joblo.com/img/redesign-2012/portal/footer-section1-hr.png) top left repeat-x; height: 30px; line-height: 14px; font-size: 11px; overflow: hidden; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row:first-child { padding-top: 0px; background: none; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row > a { display: block; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row > a:hover { color: #ccc; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row > a > img { float: left; width: 30px; height: 30px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column2 > div.body > div.row > a > span { display: block; margin: 0px 0px 0px 40px; }
+
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column4 > div.body { padding: 0px 0px 7px 0px; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column4 > div.body > div.row { margin: 3px 0px 0px 0px; padding: 5px 0px 0px 0px; background: url(http://www.joblo.com/img/redesign-2012/portal/footer-section1-hr.png) top left repeat-x; height: 14px; line-height: 14px; font-size: 11px; overflow: hidden; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column4 > div.body > div.row:first-child { padding-top: 2px; background: none; }
+div.wrapper > div.footer > div.inner > div.section.section1 > div.column.column4 > div.body > div.row > a:hover { color: #262626; }
+
+/***** footer section2 *****/
+div.wrapper > div.footer > div.inner > div.section.section2 { padding: 35px 42px 35px 42px; background: #2B2B2B; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header { line-height: 24px;height: 50px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.left { float: left; font-family: "Oswald", Arial, sans-serif; font-size: 22px; font-weight: normal; color: #EBEBEB; text-shadow: 2px 2px 2px #333; text-transform: uppercase; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.left > h3 { margin: 0; font-family: "Oswald", Arial, sans-serif; font-size: 22px; font-weight: normal; color: #EBEBEB; text-shadow: 2px 2px 2px #333; text-transform: uppercase; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.right { float: right; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.right > form { float: left; margin: 0; width: 200px; height: 22px; border: 1px solid #D2D2D2; background: #FFF; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.right > form > div { float: left; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.right > form > div > input[type="text"] { float: left; margin: 0px 0px 0px 6px; padding: 0; border: none; background: none; width: 166px; height: 22px; line-height: 20px; outline: none; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.header > div.right > form > div > input[type="submit"] { float: left; margin: 3px 0px 0px 8px; padding: 0; border: none; background: url(http://www.joblo.com/img/redesign-2012/icon-search-16x16.png) top left no-repeat; width: 16px; height: 16px; cursor: pointer; outline: none; }
+div.social { float: left; margin: 1px 10px 0px 0px; }
+div.social > a { float: left; width: 22px; height: 22px; margin: 0px 0px 0px 10px; background: none top left no-repeat; }
+div.social > a:first-child { margin-left: 0px; }
+div.social > a.facebook {  }
+div.social > a.twitter {  }
+div.social > a.googleplus {  }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column { float: left; width: 198px; margin: 20px 0px 0px 56px; color: #C7C7C7; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column a { color: #C7C7C7; text-decoration: none;display: block; padding: 0 5px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column a:hover { color: #FFF; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.logo { height: 50px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.logo > a { display: block; width: 100%; height: 100%; background: none center center no-repeat; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul { margin: 0px 0px 0px 0px; padding: 0; border: none; background: none; list-style: none; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul > li { margin: 0px 0px 0px 0px; padding: 8px 0px 8px 0px; border: none; border-bottom: 1px solid #434343; background: none; list-style: none; font-size: 11px; height: 35px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul > li:first-child { margin-top: 8px; border-top: 1px solid #434343; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > p.more { margin: 8px 0px 0px 0px; font-size: 10px; font-weight: bold; text-transform: uppercase; text-align: right; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul > li:hover { background: #ffffff; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul > li:hover a { color:#2b2b2b; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > ul > li:hover a:hover { color:#2b2b2b; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > p.more > a > span { color: #5D5D5D; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column.joblo { margin-left: 0px; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column.joblo > div.logo > a { background-image: url(http://www.joblo.com/img/redesign-2012/footer-logo-joblo.png); }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column.aith > div.logo > a { background-image: url(http://www.joblo.com/img/redesign-2012/footer-logo-aith.png); }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column.dd > div.logo > a { background-image: url(http://www.joblo.com/img/redesign-2012/footer-logo-dd.png); }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column.mh > div.logo > a { background-image: url(http://www.joblo.com/img/redesign-2012/footer-logo-mh.png); }
+
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a {background-image:url(http://www.joblo.com/portal/2012/images/float-nav-social-icon.png);display:block;height:26px;width:17px; float: left; }
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#facebook{background-position:0 0;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#facebook:hover{background-position:-26px 0;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#twitter{background-position:0 -26px;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#twitter:hover{background-position:-26px -26px;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#plus{background-position:0 -52px;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#plus:hover{background-position:-26px -52px;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#youtube{background-position:0 -78px;}
+div.wrapper > div.footer > div.inner > div.section.section2 > div.column > div.icons.social > a#youtube:hover{background-position:-26px -78px;}
+
+/***** footer section3 *****/
+div.wrapper > div.footer > div.inner > div.section.section3 { padding: 35px 42px 35px 42px; background: #252525; color: #C7C7C7; }
+div.wrapper > div.footer > div.inner > div.section.section3 a { color: #C7C7C7; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.section3 a:hover { color: #FFF; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column { float: left; width: 198px; margin: 0px 0px 0px 56px; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column:first-child { margin-left: 0px; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column.margintop { margin-top: 35px; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column > h4 { margin: 5px 0px 5px 0px; font-size: 12px; font-weight: bold; color: #DC090B; text-transform: uppercase; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column > h4 > a { color: #DC090B; }
+div.wrapper > div.footer > div.inner > div.section.section3 > div.column > p { margin: 5px 0px 5px 0px; }
+
+/***** footer section4 *****/
+div.wrapper > div.footer > div.inner > div.section.section4 { padding: 35px 42px 35px 42px; background: #2B2B2B; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left { float: left; width: 60%; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left p { margin: 10px 0px 0px 0px; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left p:first-child { margin-top: 0px; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left p a { color: #FFF; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left p a:hover { color: #B20609; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.left p span { margin: 0px 10px 0px 10px; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.right { float: right; width: 40%; font-size: 11px; color: #BEBEBE; text-align: right; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.right a { color: #BEBEBE; text-decoration: none; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.right a:hover { color: #FFF; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.right p { margin: 6px 0px 0px 0px; }
+div.wrapper > div.footer > div.inner > div.section.section4 > div.right p:first-child { margin-top: 0px; }
+
+
+
+/* Carousel Skins */
+
+.jcarousel-direction-rtl { 	direction: rtl; }
+
+
+/* Celebrity */
+
+.jcarousel-skin-celebrity .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-celebrity .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-celebrity .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 236px;
+}
+
+.jcarousel-skin-celebrity .jcarousel-item {
+    width: 158px;
+    height: 236px;
+}
+
+.jcarousel-skin-celebrity .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-celebrity .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-celebrity .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#celebrity li div.cell:first-child { margin-left: 0px; }
+ul#celebrity li div.cell > a { display: block; width: 158px; height: 206px; position:relative; }
+ul#celebrity li div.cell > a > img { display: block; width: 158px; height: 206px; }
+ul#celebrity li div.cell > a > span.overlay { width: 158px; height: 206px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#celebrity li div.cell > a:hover > span.overlay { background: none; }
+ul#celebrity li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#celebrity li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* dvd releases */
+
+.jcarousel-skin-dvd-releases .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 205px;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-item {
+    width: 124px;
+    height: 205px;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-dvd-releases .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#dvd-releases li div.cell:first-child { margin-left: 0px; }
+ul#dvd-releases li div.cell > a { display: block; width: 124px; height: 174px; position:relative; }
+ul#dvd-releases li div.cell > a > div { display: block; width: 124px; height: 174px; }
+ul#dvd-releases li div.cell > a > div > img { display: block; width: 124px; }
+ul#dvd-releases li div.cell > a > div > span.overlay { width: 124px; height: 174px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#dvd-releases li div.cell > a:hover > div > span.overlay { background: none; }
+ul#dvd-releases li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#dvd-releases li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* dvd reviews */
+
+.jcarousel-skin-dvd-reviews .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 205px;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-item {
+    width: 124px;
+    height: 205px;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-dvd-reviews .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#dvd-reviews li div.cell:first-child { margin-left: 0px; }
+ul#dvd-reviews li div.cell > a { display: block; width: 124px; height: 174px; position:relative; }
+ul#dvd-reviews li div.cell > a > div { display: block; width: 124px; height: 174px; }
+ul#dvd-reviews li div.cell > a > div > img { display: block; width: 124px;  }
+ul#dvd-reviews li div.cell > a > div > span.overlay { width: 124px; height: 174px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#dvd-reviews li div.cell > a:hover > div > span.overlay { background: none; }
+ul#dvd-reviews li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#dvd-reviews li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* exclusive */
+
+.jcarousel-skin-exclusive .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-exclusive .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-exclusive .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 208px;
+}
+
+.jcarousel-skin-exclusive .jcarousel-item {
+    width: 158px;
+    height: 208px;
+}
+
+.jcarousel-skin-exclusive .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 8px;
+}
+
+.jcarousel-skin-exclusive .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-exclusive .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#exclusive-features li div.cell:first-child { margin-left: 0px; }
+ul#exclusive-features li div.cell > a { display: block; width: 100%; height: 100%; color: #363636; text-decoration: none; position:relative; }
+ul#exclusive-features li div.cell > a:hover { color: #B20609; }
+ul#exclusive-features li div.cell > a > img { display: block; height: 158px; width: 158px; }
+ul#exclusive-features li div.cell > a > span.overlay { position: absolute; top: 0px; left: 0px; height: 158px; width: 158px; background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#exclusive-features li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; }
+ul#exclusive-features li div.cell > a:hover > span.overlay { background: none; }
+
+
+ul#exclusive-features li { float: left; margin-right: 8px; width:158px;}
+
+/* interviews */
+
+.jcarousel-skin-interviews .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-interviews .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-interviews .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 198px;
+}
+
+.jcarousel-skin-interviews .jcarousel-item {
+    width: 158px;
+    height: 198px;
+}
+
+.jcarousel-skin-interviews .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-interviews .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+.jcarousel-skin-interviews .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#interviews li div.cell:first-child { margin-left: 0px; }
+ul#interviews li div.cell > a { display: block; width: 158px; height: 158px; position:relative; }
+ul#interviews li div.cell > a > img { display: block; width: 158px; height: 158px; }
+ul#interviews li div.cell > a > span.overlay { width: 158px; height: 158px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#interviews li div.cell > a:hover > span.overlay { background: none; }
+ul#interviews li div.cell > a > span.video { width: 31px; height: 31px;position: absolute; top: 122px; left: 5px; }
+ul#interviews li div.cell > a > span.video img {  }
+ul#interviews li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#interviews li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+ul#interviews li div.cell > a > span.movie { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* most popular */
+
+.jcarousel-skin-most-popular .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-most-popular .jcarousel-container-vertical {
+    width: 124px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-most-popular .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-most-popular .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 205px;
+}
+
+.jcarousel-skin-most-popular .jcarousel-item {
+    width: 124px;
+    height: 205px;
+}
+
+.jcarousel-skin-most-popular .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-most-popular .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+.jcarousel-skin-most-popular .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#most-popular {height: 190px;}
+ul#most-popular li {height: 190px;}
+ul#most-popular li div.cell:first-child { margin-left: 0px; }
+ul#most-popular li div.cell > a { display: block; width: 124px; height: 190px; position:relative; }
+ul#most-popular li div.cell > a > img { display: block; width: 124px; height: auto;position: absolute; top: 0px; left: 0px; }
+ul#most-popular li div.cell > a > span.overlay { width: 124px; height: 160px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#most-popular li div.cell > a:hover > span.overlay { background: none; }
+ul#most-popular li div.cell > a > span.title { display: block; margin: 0px 0px 0px 0px; font-weight: bold; color: #363636;position: absolute; top: 160px; left: 0px; width:124px; background-color:#fff; height:30px; padding-top:5px; }
+ul#most-popular li div.cell > a:hover > span.title { color: #B20609; }
+
+/* movie hotties */
+
+.jcarousel-skin-movie-hotties .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-container-vertical {
+    width: 158px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 255px;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-item {
+    width: 158px;
+    height: 255px;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-movie-hotties .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#movie-hotties li div.cell:first-child { margin-left: 0px; }
+ul#movie-hotties li div.cell > a { display: block; width: 158px; height: 223px; position:relative; }
+ul#movie-hotties li div.cell > a > img { display: block; width: 158px; height: 223px; }
+ul#movie-hotties li div.cell > a > span.overlay { width: 158px; height: 223px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#movie-hotties li div.cell > a:hover > span.overlay { background: none; }
+ul#movie-hotties li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#movie-hotties li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* movie posters */
+
+.jcarousel-skin-movie-posters .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-container-vertical {
+    width: 158px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 245px;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-item {
+    width: 158px;
+    height: 205px;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-movie-posters .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+ul#movie-posters {height: 245px;}
+ul#movie-posters li {height: 245px;}
+ul#movie-posters li div.cell:first-child { margin-left: 0px; }
+ul#movie-posters li div.cell > a { display: block; width: 158px; height: 245px; position:relative;background: #000; }
+ul#movie-posters li div.cell > a > img { display: block; width: 158px; height: auto;position: absolute; top: 0px; left: 0px; }
+ul#movie-posters li div.cell > a > span.overlay { width: 158px; height: 215px; position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#movie-posters li div.cell > a:hover > span.overlay { background: none; }
+ul#movie-posters li div.cell > a > span.title { display: block; margin: 0px 0px 0px 0px; font-weight: bold; color: #363636;position: absolute; top: 215px; left: 0px; width:158px; background-color:#fff; height:30px; padding-top: 5px; }
+ul#movie-posters li div.cell > a:hover > span.title { color: #B20609; }
+
+/* movie reviews */
+
+.jcarousel-skin-movie-reviews .jcarousel-container-horizontal {
+    width: 660px;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-clip-horizontal {
+    width:  660px;
+    height: 205px;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-item {
+    width: 124px;
+    height: 205px;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 9px;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-movie-reviews .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+
+ul#movie-reviews li div.cell:first-child { float: left; margin-right: 8px; }
+
+
+ul#movie-reviews li div.cell > a { display: block; width: 124px; height: 186px; position:relative; }
+ul#movie-reviews li div.cell > a > img { display: block; width: 124px; height: 186px; }
+ul#movie-reviews li div.cell > a > span.overlay { width: 124px; height: 186px;position: absolute; top: 0px; left: 0px;background: url(http://www.joblo.com/img/redesign-2012/overlay-tile.png) top left repeat; }
+ul#movie-reviews li div.cell > a:hover > span.overlay { background: none; }
+ul#movie-reviews li div.cell > a > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #363636; }
+ul#movie-reviews li div.cell > a:hover > span.title { display: block; margin: 5px 0px 0px 0px; font-weight: bold; color: #B20609; }
+
+/* Slidorion Stylesheet */
+#slidorion {
+	/*padding:10px;*/
+	width: 680px;			/* Set to slidorion width. Is equal to #slider + #accordion width */
+	height: 300px;			/* Set to slidorion height. Is equal to #slider and #accordion height */
+	/*position: relative;
+	left: 50%;
+	margin-left: -384px;*/
+	background: #000;
+}
+
+#slidorion p {
+	color:#fff;
+	margin-top: -15px;
+	line-height: 15px;
+	margin-bottom: -11px;
+	height:40px;
+	font-size: 12px;
+	padding-top: 0;
+}
+
+#slider {
+	width: 488px;			/* Set to slider width */
+	height: 300px;			/* Set to slider height */
+	position: relative;
+	float: left;
+	overflow: hidden;		/* Hides the animations */
+}
+
+#slider > div {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#accordion {
+	width: 192px;			/* Set to accordion width */
+	height: 300px;			/* Set to image height */
+	font-family: Arial;
+	background: #000;
+	-webkit-box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
+	-moz-box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
+	box-shadow: -3px 0px 3px -1px rgba(51,51,51,0.3);
+	position: relative;
+	z-index:999;
+	overflow: hidden;
+	float: left;
+	
+}
+
+#accordion > .link-header {
+	height:30px;
+	padding: 8px 14px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	background: #383838;
+	border-top: 1px solid #000;
+}
+
+#accordion > .link-header:first-child {
+	border-top:none;
+}
+
+#accordion > .link-header:hover {
+	background: #555;
+	cursor: pointer;
+}
+
+#accordion > .link-header.active {
+	border-bottom: none;
+	background: #000;
+	filter: none;
+	color: #fff;
+}
+
+#accordion > .link-content {
+	
+	font-weight: normal;
+	font-size: 13px;
+	line-height:20px;
+	margin: 0;
+	padding: 16px;
+	border: none;
+	background: #000;
+	overflow:auto;
+}
+
+#header {
+	width:1000px;
+	height:120px;
+	margin:20px auto;
+}
+#accordion p {
+	margin-bottom:14px;
+}
+#accordion strong {
+	font-weight: bold !important;
+}
+#slide1 {
+	background:#f2f2f2;
+}
+#slide1 .content {
+	padding:20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif; font-weight:bold;
+}
+#slide1 h4 {
+	font-size:24px !important;
+	line-height:28px !important;
+}
+#slide1 .content ul {
+	list-style: square;
+	margin-top:15px;
+	margin-left:40px;
+}
+#slide1 .content li {
+	margin-bottom:10px;
+}
+#slide3 {
+	background:url(../img/slide-bg.jpg) center center no-repeat;
+	color:#fff !important;
+}
+#slide3 .content {
+	padding:15px 20px;
+}
+#slide3 a {
+	color:#ddd;
+}
+#slide3 .content h1 {
+	text-align:left;
+	font-size:60px;
+}
+
+#a_headlines {font-size:9px;}
+
+#cmn_ad_tag_head, #cmn_ad_tag_head div, #cmn_ad_tag_head table, #cmn_ad_tag_head table td {margin: 0 auto; text-align: center;}
+
+div.headlines div.body div.tabs ul.content li:first-child {display:block}
+div.headlines div.body div.tabs ul.content li {display:none;}
+
+
+#cmn_ad_tag_head, #cmn_ad_tag_head div, #cmn_ad_tag_head table, #cmn_ad_tag_head table td {margin: 0 auto; text-align: center;}
+#cmn_ad_tag_head{margin:0px auto 10px; /*width:728px;*/}
+
+#cmn_ad_tag_head, #cmn_ad_tag_head div, #cmn_ad_tag_head table, #cmn_ad_tag_head table td {margin: 0 auto; text-align: center;}
+.fw_joblo{margin:0px auto 10px; /* padding-top:10px;text-align: center; width:728px;*/}

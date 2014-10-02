@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+body {
+	background-image: url("../images/body-bg.jpg");
+	margin: 0;
+	padding: 0;
+}
+
+body img {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#wrap {
+	margin: 0 auto;
+	padding: 0;
+	width: 1300px;
+}
+
+/***** header *****/
+
+header {
+	background-color: #6a1423;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/***** main *****/
+
+#mainBody {
+	position: relative;
+	background-color: #ececec;
+	margin: 0;
+	padding: 14px;
+	width: 1272px;
+}
+
+#mainSearchBar {
+	display: inline-block;
+	background-color: #a40a0c;
+	width: 100%;
+}
+
+#mainMoviesPostWrap {
+	display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.mainMoviePost {
+	float: left;
+	background-color: #fff;
+	width: 200px;
+	height: 300px;
+	margin: 5px;
+}
+
+#mainButtonMoreMovies {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.mainGalleryBanner {
+	display: inline-block;
+    width: 100%;
+    background-color: #fff;	
+}
+
+.mainGalleryBannerHeaderLeft {
+	display: block;
+	float: left;
+}
+
+.mainGalleryBannerHeaderRight {
+	display: block;
+    float:right;
+    color: #f00;
+}
+
+.mainGalleryBannerWrap {
+	clear :both;
+	position: relative;
+	width: 100%;
+}
+
+.mainGalleryBannerPost {
+    float: left;
+    width: 167px;
+    height: 250px;
+    margin: 4px;
+}
+
+.mainGalleryBannerPostSmall {
+    float: left;
+    width: 128px;
+    height: 200px;
+    margin: 4px;
+}
+
+/***** footer *****/
+
+footer {
+	background-color: #2b2b2b;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+

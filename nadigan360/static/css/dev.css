@@ -1,0 +1,1135 @@
+.logo-mobile{display:none;}
+.mobile_ads{display:none;text-align: center}
+.wrapper{
+transition:width 0.4s ease;
+-webkit-transition:width 0.4s ease;
+-moz-transition:width 0.4s ease;
+-o-transition:width 0.4s ease;
+}
+
+div.wrapper > div.inner { 
+	background:#D6D6D6;
+}
+#float_nav {
+	background-color: #000;
+	display: block;
+	height: 60px;
+	position: fixed;
+	right: 0;
+	top: -88px;
+	width: 100%;
+	z-index: 99999
+}
+#float_nav #social {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 14px
+}
+#float_nav #social ul {
+	list-style: none
+}
+#float_nav #social ul li {
+	float: left;
+	margin: 0 2px
+}
+#float_nav #social ul li a {
+	background-image: url(http://www.joblo.com/portal/2012/images/float-nav-social-icon.png);
+	display: block;
+	height: 26px;
+	width: 26px
+}
+#float_nav #social ul li a#facebook {
+	background-position: 0 0
+}
+#float_nav #social ul li a#facebook:hover {
+	background-position: 26px 0
+}
+#float_nav #social ul li a#twitter {
+	background-position: 0 78px
+}
+#float_nav #social ul li a#twitter:hover {
+	background-position: 26px 78px
+}
+#float_nav #social ul li a#plus {
+	background-position: 0 52px
+}
+#float_nav #social ul li a#plus:hover {
+	background-position: 26px 52px
+}
+#float_nav #social ul li a#youtube {
+	background-position: 0 26px
+}
+#float_nav #social ul li a#youtube:hover {
+	background-position: 26px 26px
+}
+#float_nav .center {
+	margin: 0 auto
+}
+#float_nav .logo {
+	float: left;
+	left: 0;
+	position: absolute;
+	top: 0
+}
+#float_nav .logo img {
+	margin: 9px 0
+}
+#float_nav .nav {
+	width: 640px
+}
+#float_nav .nav .bottom {
+	text-align: center;
+	width: 640px;
+	margin: 0 auto
+}
+#float_nav .nav .bottom ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0
+}
+#float_nav .nav .bottom ul li {
+	float: left;
+	margin: 0 8px
+}
+#float_nav .nav .bottom ul li a {
+	color: #C2C2C2;
+	font-family: Oswald, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 29px;
+	text-transform: uppercase
+}
+#float_nav .nav .bottom ul li a:hover {
+	color: #FFF
+}
+#float_nav .nav .top {
+	margin: 0;
+	padding: 0
+}
+#float_nav .nav .top {
+	list-style: none;
+	margin: 0 15px;
+	padding: 0
+}
+#float_nav .nav .top span {
+	background-image: url(http://www.joblo.com/portal/2012/images/float-nav-center-top-bg-span.jpg);
+	background-repeat: repeat-x;
+	float: left;
+	height: 29px;
+	padding: 0;
+	width: 2px
+}
+#float_nav .nav .top div {
+	background-image: url(http://www.joblo.com/portal/2012/images/float-nav-center-top-bg-center.jpg);
+	background-repeat: repeat-x;
+	float: left;
+	height: 29px;
+	padding: 0 10px
+}
+#float_nav .nav .top div a {
+	color: #000;
+	font-family: Oswald, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 29px;
+	text-transform: uppercase
+}
+#float_nav .nav .top div a:hover {
+	color: #B20609
+}
+#float_nav .nav .top div.left {
+	background-image: url(http://www.joblo.com/portal/2012/images/float-nav-center-top-bg-left.jpg);
+	background-repeat: repeat-x;
+	display: block;
+	height: 29px;
+	width: 5px;
+	padding: 0
+}
+#float_nav .nav .top div.right {
+	background-image: url(http://www.joblo.com/portal/2012/images/float-nav-center-top-bg-right.jpg);
+	background-repeat: repeat-x;
+	display: block;
+	height: 29px;
+	width: 5px;
+	padding: 0
+}
+#float_nav .warper {
+	position: relative;
+	width: 1014px;
+	margin: 0 auto
+}
+#float_nav #close {
+	position: absolute;
+	right: -100px;
+	top: 20px
+}
+#float_nav #close a {
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Oswald, Arial, sans-serif
+}
+#nav_opener {
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	position: fixed;
+	right: -16px;
+	top: -60px;
+	width: 100px;
+	z-index: 99999;
+	color: #FFF;
+	font-size: 13px;
+	text-align: center;
+	line-height: 33px;
+	font-family: Oswald, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 0 15px 0 0
+}
+#scrolladd_opener {
+	background: none repeat scroll 0 0 #F4F4F4;
+	border-radius: 5px 0 0 5px;
+	display: block;
+	height: 10px;
+	left: -32px;
+	position: absolute;
+	top: 96px;
+	cursor: pointer;
+	padding: 10px 7px 10px 5px
+}
+#scrolladd_opener div {
+	width: 6px;
+	height: 10px;
+	background: transparent url(http://www.joblo.com/img/arrow-toggle.png) 0 0 no-repeat
+}
+#scrolladd_opener:hover div {
+	background: transparent url(http://www.joblo.com/img/arrow-toggle.png) 0 -10px no-repeat
+}
+#close_social_bar {
+	cursor: pointer;
+	margin-top: 1px;
+	text-align: center
+}
+#close_social_bar div {
+	float: left;
+	margin-left: 10px;
+	margin-top: -1px
+}
+#close_social_bar div#arrow-close {
+	float: left;
+	width: 6px;
+	height: 10px;
+	background: transparent url(http://www.joblo.com/img/arrow-toggle.png) -6px 0 no-repeat;
+	margin-left: 5px;
+	margin-top: 1px
+}
+#close_social_bar:hover div#arrow-close {
+	background: transparent url(http://www.joblo.com/img/arrow-toggle.png) -6px -10px no-repeat
+}
+div.wrapper > div.body > div.inner > div.column.main > div.section.main > div#scrolladd {
+	height: 455px
+}
+#portal_loadmore {
+	position: relative;
+}
+#loading {
+	background: url('../images/loading.gif')no-repeat center;
+	width: 16px;
+	display: block;
+	text-align: center;
+	height: 16px;
+	margin-right: 10px;
+	float: left;
+	margin-top: 4px;
+}
+#side-col {
+	float: right;
+	height: 300px;
+	margin-left: 10px;
+	width: 300px;
+	display: table;
+}
+div.slider-wrap {
+	width: auto;
+	overflow: hidden;
+	height: 300px;
+}
+div.slider-wrap li {position: relative;}
+div.slider-wrap li .label {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url('http://www.joblo.com/newsimages1/shadow-2013.png')repeat-x bottom;
+	padding: 90px 0% 35px 0;
+	width: 100%;
+}
+div.slider-wrap li .label h2 {
+	color: #FFF;
+	font-size: 20px;
+	margin: 0;
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 0 25px;
+}
+div.slider-wrap li .label p {
+	color: #FFF;
+	font-size: 20px;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+.bx-wrapper {
+	margin: 0 auto;
+}
+.bx-wrapper img {
+	width: 100%;
+}
+.bx-wrapper .bx-viewport {
+	left: 0;
+	border: 0;
+	box-shadow: none;
+
+}
+
+@media screen and (min-width:991px){
+	.bx-wrapper .bx-viewport {height: 300px !important;}
+	div.slider-wrap {height: 300px;}
+}
+.bx-wrapper .bx-controls-direction a {
+	width: 9px !important;
+	height: 16px !important;
+	top: inherit;
+	bottom: 3.6% !important
+}
+.bx-wrapper .bx-prev {
+	background: url('/img/redesign-portal-2013/slide-arrows.png') no-repeat;
+	background-position: 0 0;
+	left: 295px;
+}
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 -16px;
+}
+.bx-wrapper .bx-next {
+	background: url('/img/redesign-portal-2013/slide-arrows.png') no-repeat;
+	background-position: -9px 0;
+	right: 295px;
+}
+.bx-wrapper .bx-next:hover {
+	background-position: -9px -16px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 13px;
+	width: 100%;
+	z-index: 1000;
+}
+.bx-wrapper .bx-pager.bx-default-pager a { 
+	background:#a9a9a9;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #fff;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#feed .ad-side {
+	padding: 0;
+	width: 300px;
+}
+#feed .slider {
+	margin-bottom:10px;
+}
+/*#feed .slider .first
+{
+float: left;
+width: 940px;
+}*/
+#menu-toggle {
+	background: #eaeaea;
+	color: #1f1f1f;
+	display: none;
+	line-height: 60px;
+	text-indent: 0;
+	text-transform: uppercase;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#menu-toggle ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu-toggle ul li {
+	border-bottom: 1px solid #DDDDDD;
+	width: 100%;
+	text-align: left;
+}
+#menu-toggle ul li a {
+	background-image: url("../../../img/redesign-2012/portal/portal-resposive-mobile-arrow.png");
+	background-position: 95% center;
+	background-repeat: no-repeat;
+	color: #1F1F1F;
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+	width: 100%;
+	font-weight: 600;
+	background-size: 6px;
+}
+#menu-toggle ul li a span {
+	display: inline-block;
+	height: 60px;
+	margin-left: 10px;
+	vertical-align: top;
+	width: 133px;
+}
+#menu-toggle ul li.joblo a span {
+	background-image: url("../../../img/redesign-2012/portal/portal-resposive-mobile-icon-joblo.png");
+}
+#menu-toggle ul li.aith a span {
+	background-image: url("../../../img/redesign-2012/portal/portal-resposive-mobile-icon-aith.png");
+}
+#menu-toggle ul li.mh a span {
+	background-image: url("../../../img/redesign-2012/portal/portal-resposive-mobile-icon-mh.png");
+}
+#menu-toggle:hover + .nav1 {
+	display: block;
+}
+#portal_loadmore {
+	text-align: center;
+	margin-top: 10px;
+}
+#portal_loadmore .cmd_portal_loadmore {
+	background-color: #C91000;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	position: relative;
+}
+#portal_loadmore .cmd_portal_loadmore:hover {
+	opacity: 0.9;
+}
+#portal_loadmore .cmd_portal_loadmore span {
+	display: block;
+	float: left
+}
+#portal_loadmore .cmd_portal_loadmore #arrow { 
+	background: url('/img/bg/arrow-down.png') no-repeat;
+	width: 16px;
+	height: 10px;
+	float: right;
+	margin-top: 7px;
+	margin-left: 20px;
+}
+.clear {
+	clear: both;
+}
+.filter {
+	background: #a50a0c;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	outline: none;
+	padding: 0;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.filter h1 {
+	color: #FFF;
+	display: block;
+	float: left;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.5em;
+	margin: 6px 0px 0 15px;
+	outline: none;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.filter h1.btn {
+	display:none;	
+}
+
+.filter-wrap{float:left;width: 425px;}
+
+.showTip { 
+	display:block !important;
+	opacity:1 !important;
+}
+.bubbletip {
+	z-index: 10000 !important;
+}
+#tooltip {
+	position: relative;
+	width: 20px;
+	height: 17px;
+	display: inline-block;
+	text-align: center;
+	font-size: 11px;
+	line-height: 18px;
+	margin-left: 10px;
+	cursor: pointer;
+	top: -2px;
+}
+#tooltip:hover {color:#701810;}
+
+#tooltip-text {
+	display: block;
+	font-family: 'Arial, Helvetica', sans-serif;
+	background: #FFFFFF;
+	font-size: 12px;
+	color: #333;
+	font-weight: 400;
+	text-transform: none;
+	line-height: 1.3em;
+	max-width: 250px;
+}
+.filter ul {
+	float: left;
+	list-style: none outside none;
+	margin: 0 2%;
+	outline: none;
+	padding: 0;
+	width: auto;
+}
+.filter ul li {
+	display: inline-block;
+	height: 35px;
+	outline: none;
+	padding: 0 10px;
+}
+.filter ul li a {
+	color: #FFFFFF;
+	display: block;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 14px;
+	height: 32px;
+	line-height: 36px;
+	outline: none;
+	padding-left: 22px;
+	position: relative;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+}
+.filter ul li a span {
+	background-image: url("/img/joblo-portal-filter-radio-splice.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 16px;
+	left: 0;
+	outline: none;
+	position: absolute;
+	top:10px;
+	width: 16px;
+}
+.filter ul li.active a span {
+	background-position: 0 -16px;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	text-align: center;
+	margin: 19px 0 0 30px;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 {
+	background: none repeat scroll 0 0 #E9E9E9;
+	border-radius: 5px;
+	margin: 0 0 0 0;
+	position: static;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > a {
+	float: left;
+	height: 32px;
+	line-height: 33px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 15px;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 a {
+	font-family: "Oswald", Arial, sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 span {
+	padding: 0 4px;
+	display: inline-block;
+	font-weight: 200;
+	vertical-align: top;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav2 {
+	width: 100%;
+	margin-top: 0;
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > a.nav1 {
+	margin: 0
+}
+div.wrapper > div.header > div.inner > div.section.main > div.nav > div.section.nav1 > span {
+	margin: 0;
+	height: 30px;
+}
+
+.filter input {
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+.filter ul li:hover {
+	background-color: #c41516;
+	outline: none;
+}
+.filter ul li.active {
+	outline: none;
+}
+.filter .dropdown {
+	background: #860607 url('../../../img/redesign-2012/portal/dropdown.svg')no-repeat 95% center;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 35px;
+	width: 140px;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+	cursor: pointer;
+}
+.filter .dropdown span {
+	padding-left: 10%;
+	width: 80%;
+}
+.filter .dropdown:hover > ul {
+	display: block;
+}
+.filter .dropdown ul {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 0;
+	background: #860607;
+	color: #FFF;
+	z-index: 2;
+	margin: 0;
+	line-height: 1.4em;
+}
+.filter .dropdown ul li {
+	padding: 10px 10%;
+	width: 80%;
+}
+.filter .search {
+	cursor: pointer;
+	float: right;
+	width: 170px;
+	margin-top: 5px;
+	margin-right: 7px;
+}
+
+.filter .search .button{display:none;}
+
+.filter .search form {overflow:hidden;}
+.filter .search form input[type='search'] {
+	border: 0;
+	outline: 0;
+	background: #fff;
+	height: 25px;
+	width: 120px;
+	-webkit-border-radius: 13px 0px 0px 13px;
+	border-radius: 13px 0px 0px 13px;
+	display: block;
+	vertical-align: top;
+	padding: 0 10px;
+	webkit-box-shadow: none; 
+   -moz-box-shadow: none; 
+   box-shadow: none;
+   float: left;
+}
+.filter .search form input[type='submit'] {
+	border: 0;
+	outline: 0;
+	background: #fff url('../../../img/redesign-2012/portal/search.svg')no-repeat center;
+	height: 25px;
+	width: 30px;
+	-webkit-border-radius: 0 13px 13px 0;
+	border-radius: 0 13px 13px 0;
+	display: block;
+	vertical-align: top;
+	margin-left: -5px;
+	float: right;
+}
+.top-social {
+	padding: 10px 4px 4px 4px; /* IE and Firefox overflow if margin left and right are 5px; */
+}
+.top-social span {
+	display: inline-block;
+	padding: 0;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: "Oswald", Arial, sans-serif;
+}
+.top-social .icon {
+	background: url('/img/bg/follow-social-icon.png') no-repeat;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	vertical-align: middle;
+	line-height: 45px;
+}
+.top-social .icon.fb {
+	background-position: 0 0;
+}
+.top-social .icon.fb:hover {
+	background-position: -35px 0;
+}
+.top-social .icon.gp {
+	background-position: 0 -70px;
+}
+.top-social .icon.gp:hover {
+	background-position: -35px -70px;
+}
+.top-social .icon.tw {
+	background-position: 0 -35px;
+}
+.top-social .icon.tw:hover {
+	background-position: -35px -35px;
+}
+.top-social .icon.yt {
+	background-position: 0 -105px;
+}
+.top-social .icon.yt:hover {
+	background-position: -35px -105px;
+}
+.top-social .icon.rs {
+	background-position: 0 -140px;
+}
+.top-social .icon.rs:hover {
+	background-position: -35px -140px;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1070px;
+}
+div.wrapper > div.header > div.inner > div.section.main {
+	background: url('../../../img/redesign-2012/portal/top/portal-header-bg.jpg') top left no-repeat;
+	background-size: cover;
+	height: auto;
+	position: relative;
+	min-height: 100px;
+}
+div.wrapper > div.header > div.inner > div.section.main > a.logo {
+	background: url('../../../img/redesign-portal-2013/portal-logo-beta.png') top left no-repeat;
+	top: -10px;
+	display: block;
+	height: 110px;
+	left: 0;
+	position: relative;
+	width: 280px;
+	float: left;
+	margin-left: 18px;
+}
+section#feed {
+	display: block;
+	padding: 6px 15px;
+	position: relative;
+}
+section#feed article {
+	opacity: 1;
+	background: none repeat scroll 0 0 #FFFFFF;
+	display: inline-block;
+	margin: 5px;
+	padding: 0 0 4px 0;
+	position: relative;
+	vertical-align: top;
+	width: 200px;
+	z-index: 0;
+	transition: opacity 1s ease;
+	-webkit-transition: opacity 1s ease;
+	overflow: hidden;
+	height: 297px;
+}
+
+
+section#feed article.hidethis {
+	opacity: 0
+}
+section#feed article:hover > .img img {
+	/* opacity: 0.92; */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+section#feed article:hover > .content .title a {
+	color: #000;
+}
+section#feed article .content {
+	background-color: #ffffff;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 4px 8px 8px 8px;
+	position: relative;
+	z-index: 999;
+}
+section#feed article .content .title {
+	color: #424242;
+	padding-bottom: 10px;
+	height: 60px;
+	font-size: 12px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: arial;
+	overflow: hidden;
+}
+section#feed article .content .title a {
+	color: #000;
+	font-weight:bold;
+}
+section#feed article .content .type {
+	color: #c80f10;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: 0;
+}
+section#feed article .content .type a {
+	display: inline-block;
+	margin-bottom: 3px;
+	background: #ffffff;
+	font-weight: bold;
+	border: 1px solid #ECECEC;
+	padding: 0 5px;
+}
+section#feed article .content .type a.joblo { 
+	display: inline-block;
+	margin-bottom: 3px;
+	background: #fff;
+	font-weight: bold;
+	border: 1px solid #ECECEC;
+}
+
+section#feed article .content .type a.aith { 
+	color: #E4A42D;
+	background: #000;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+section#feed article .content .type a.hotties { 
+	color: #fff;
+	background: #940506;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+section#feed article .content .type a.video { 
+	color: #fff;
+	background: #000;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+section#feed article .overlay {
+	background-image: url("../../../img/bg/overlay-article-portal-2013.png");
+	/* background-color: #a50a0c;
+	opacity:0.75; */
+	background-size: 100%;
+	color: #FFFFFF;
+	height: 100%;
+	line-height: 230px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 9999;
+	text-transform: uppercase;
+	font-size: 16px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	opacity:0;
+}
+
+section#feed article:hover .overlay {
+	line-height: 200px;
+	opacity:1;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+section#feed article .img {
+	background-color: #000000;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+section#feed article .img a {
+	display: block;
+}
+section#feed article .img img {
+	bottom: 0;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+section#feed article .share {
+	background-color: #a50a0c;
+	bottom: 0;
+	display: block;
+	display: none;
+	height: 37px;
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+}
+section#feed article.big {
+	background-color: #FFF;
+	height: 290px;
+	max-width: 620px;
+	overflow: hidden;
+	width: 100%;
+}
+section#feed article.big .container {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+section#feed article.big .container .content {
+	background-color: #ffffff;
+	display: table-cell;
+	float: left;
+	font-family: "Oswald", Arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	height: 70px;
+	line-height: 18px;
+	padding: 5%;
+	position: static;
+	width: 180px;
+}
+section#feed article.big .container .content .title {
+	color: #191919;
+	font-size: 18px;
+	line-height: 1.55em;
+	text-transform: uppercase;
+}
+section#feed article.big .container .content .type {
+	color: #c80f10;
+	text-transform: uppercase;
+}
+section#feed article.big .container .img {
+	display: table-cell;
+	height: 100%;
+	vertical-align: top;
+	width: calc(100% - 185px);
+	width: -moz-calc(100% - 185px);
+	width: -webkit-calc(100% - 185px);
+}
+section#feed article.big .container .img img {
+	display: block;
+}
+section.galleries {
+	background-color: #FFF;
+	display: block;
+	margin: 10px 15px;
+	padding: 13px 12px;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+section.list{text-align: justify;}
+section.list:after{content: '';display: inline-block;width: 100%;}
+
+section.galleries header {
+	background-color: #FFF;
+	line-height: 1;
+	position: relative;
+}
+section.galleries header .more {
+position: absolute;
+top: 5px;
+right: 5px;
+text-transform: uppercase;
+font-size: 11px;
+}
+section.galleries header h2 {
+	padding: 0;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	font-family: "Oswald", Arial, sans-serif;
+	text-align: left;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+section.galleries .list article {
+	display: inline-block;
+	text-align: left;
+	width: 161px;
+	padding: 0;
+	vertical-align: top;
+	margin: 0 auto 90px auto;
+}
+
+section.galleries#dvd-release .list article{}
+
+@-moz-document url-prefix() { 
+	section.galleries#dvd-release .list article {}
+}
+section.galleries#movie-hotties .list article,
+section.galleries#most-popular .list article{}
+
+section.galleries#movie-poster .list article {margin-right:8px;}
+
+#movie-hotties {height: 265px;}
+#movie-hotties .list article {}
+#most-popular {	height: 320px;}
+#most-popular .list article {}
+#most-popular article .img-wrap {height: 240px;}
+
+#dvd-release {height: 220px;}
+#dvd-release article {width: 119px;}
+#dvd-release article .img-wrap {height: 158px;max-height: 152px;}
+#movie-poster {	height: 300px;}
+#movie-poster .list article {width: 162px;}
+#movie-poster .img-wrap {height: auto}
+#movie-poster .img-wrap img {}
+section.galleries .list article img {height: auto;width: 100%;}
+section.galleries .list article:hover a span {color: #BD0608;}
+
+section.galleries .list article a{display:block;}
+section.galleries .list article .img-wrap {
+	width: 100%;
+	overflow: hidden;
+	height: 195px;
+	position: relative;
+}
+section.galleries .list article a span{
+	float: none;
+	display: block;
+	color: #333;
+	margin-top: 7px;
+	text-align: left;
+	font-weight:bold;
+	font-size: 13px;
+	padding: 0 10px 0 2px;
+}
+
+section#feed article.json div.img a div.type{
+background: url("../../../img/bg/play-btn.png") no-repeat;
+top: 75px;
+left: 75px;
+margin: auto;
+position: absolute;
+width: 50px;
+height: 50px;
+}
+
+.logo-tablet,
+#mobile-social,
+#filter-social{display:none;}
+/*@media screen and (max-width: 1240px){
+	#float_nav #close {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	background-color: #000;
+	padding: 3px 10px;
+	}
+}*/
+
+
+section.galleries .list article .img-wrap .hover{
+background-image: url("../../../img/bg/overlay-article-portal-2013.png");
+background-size: 100%;
+color: #FFF;
+height: 100%;
+line-height:20;
+position: absolute;
+text-align: center;
+vertical-align: middle;
+width: 100%;
+z-index: 9999;
+text-transform: uppercase;
+font-size: 16px;
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+transition: all 0.2s;
+opacity: 0;
+}
+
+section.galleries .list article .img-wrap:hover .hover{line-height:16;opacity:1;}
+#movie-poster .list article .img-wrap:hover .hover{line-height:16;opacity:1;}
+
+#movie-hotties .list article .img-wrap:hover .hover,
+#dvd-release .list article .img-wrap:hover .hover{line-height:11;opacity:1;}
+
+@media screen and (min-width:991px){
+	section#feed article.json:nth-of-type(5n+1){margin-left:0 !important;}
+	section#feed article.json:nth-of-type(5n+5){margin-right:0 !important;}
+	.filter ul{display:block !important;}
+}
+@media screen and (min-width:1101px){
+	section.galleries#movie-poster .list article:nth-child(6){margin-right:0;}
+}
+
+/* Bubble tip */ 
+table.bubbletip, #tooltip-text { 
+	display:none; 
+}
+
+.bubbleload { 
+	opacity: 1 !important;
+	top: 410px !important; 
+	left: 671.5px !important;
+}
+.bubbleClose {
+	background: url("../../2013/images/bubble-close.png") top right no-repeat;
+	top:30px;
+	right:30px;
+	z-index:11000;
+	width:258px;
+	height:70px;
+	position:absolute;
+	cursor:pointer;
+}
