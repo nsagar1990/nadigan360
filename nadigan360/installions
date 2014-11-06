@@ -1,0 +1,12 @@
+apt-get update 
+apt-get install git
+apt-get install python-pip
+pip install django
+git clone https://github.com/nsagar1990/nadigan360.git
+sudo apt-get install nginx
+pip install gunicorn
+pip install South
+sudo apt-get install python-mysqldb
+pip install pillow
+sudo apt-get install build-essential checkinstall
+sudo apt-get install python-dev
