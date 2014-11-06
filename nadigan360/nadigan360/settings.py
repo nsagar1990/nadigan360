@@ -3,6 +3,8 @@ import os
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 
+print PROJECT_DIR
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -15,10 +17,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ND360',                      # Or path to database file if using sqlite3.
+        'NAME': 'NADIGAN',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': 'nd360',
+        'PASSWORD': 'sagar',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -64,19 +66,15 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/var/www/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
 # Additional locations of static files
-STATICFILES_DIRS = (
-    os.path.join('/home/niranjan/niranjan/nadigan360/templates/', 'static/'),
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
+STATICFILES_DIRS = (os.path.join(PROJECT_DIR, 'static'),)
+print STATICFILES_DIRS
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -108,15 +106,9 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'nadigan360.urls'
 
-# Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'nadigan360.wsgi.application'
 
-TEMPLATE_DIRS = (
-    '/home/niranjan/django_projects/nadigan360/templates',
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
+TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'templates'),)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -126,7 +118,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'nd360',
-    'south',
+    #'south',
     'django.contrib.admin',
     'django.contrib.admindocs',
 )
