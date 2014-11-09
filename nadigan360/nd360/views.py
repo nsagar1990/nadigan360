@@ -32,9 +32,9 @@ def home(request):
 		article	 = article['fields']
 		temp['id'] = article['movie']
 		temp['title'] 	= article['title']
-		picture = article['display_picture'].replace("templates/static/img/movies", "http://nd360.niranjanfellow.biz/static/images")
+		picture = article['display_picture'].replace("templates/static/img/movies", "http://dev.darklightz.com/static/img")
 		if not picture:
-			picture = "http://nd360.niranjanfellow.biz/static/images/no-image.jpg"
+			picture = "http://myoor.com/wp-content/uploads/2013/06/Vijayakanth-1.jpg"
 		temp['image'] = picture
 		temp['date']  = article['dateCreated']
 		temp['section'] = 'Cine News'
@@ -49,9 +49,9 @@ def home(request):
 		review = review['fields']
 		temp['title'] = review['review_title']
 		temp['id'] = review['movie']
-		picture = review.get('display_picture', '').replace("templates/static/img/movies", "http://nd360.niranjanfellow.biz/static/images")
+		picture = review.get('display_picture', '').replace("templates/static/img/movies", "http://dev.darklightz.com/static/img")
 		if not picture: 
-			picture = "http://nd360.niranjanfellow.biz/static/images/no-image.jpg"
+			picture = "http://myoor.com/wp-content/uploads/2013/06/Vijayakanth-1.jpg"
 		temp['image'] 	= picture
 		temp['date']  	= review.get('dateCreated') 
 		temp['rating'] 	= review.get('rating', '8')
@@ -69,9 +69,9 @@ def home(request):
 		temp['id'] = spl['pk']
 		spl  = spl['fields']
 		temp['title'] = article['title']
-		picture = article.get('display_picture', '').replace("templates/static/img/movies", "http://nd360.niranjanfellow.biz/static/images")
+		picture = article.get('display_picture', '').replace("templates/static/img/movies", "http://dev.darknightz/static/img")
 		if not picture:
-			picture = "http://nd360.niranjanfellow.biz/static/images/no-image.jpg"
+			picture = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10751620_837370909618714_1594550844_n.jpg"
 		temp['image'] = picture
 		temp['date']  = article['dateCreated']
 		temp['section'] = '360 Special'
@@ -88,7 +88,7 @@ def home(request):
 		temp['title'] = image['title']
 		picture = image.get('image_url', '').replace("templates/static/img/movies", "http://nd360.niranjanfellow.biz/static/images")
 		if not picture:
-			picture = "http://nd360.niranjanfellow.biz/static/images/no-image.jpg"
+			picture = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10751620_837370909618714_1594550844_n.jpg"
 		temp['image']   = picture
 		temp['date']    = image['dateCreated']
 		temp['section'] = 'gallery'
