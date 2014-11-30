@@ -21,90 +21,73 @@ def render_response(request, template, data=None):
 def _get_http_response(message, status=200):
     	return HttpResponse(message, mimetype="application/json", status = status)
 
-def home(request):
-	response 	= {}
-	news_articles 	= serializers.serialize("json", News_Article.objects.order_by('dateCreated'))
-	news_articles	= eval(news_articles)
-	response.setdefault('news_articles', [])
 
-	for article in news_articles:
-		temp = {}	
-		article	 = article['fields']
-		temp['id'] = article['movie']
-		temp['title'] 	= article['title']
-		picture = article['display_picture'].replace("templates/static/img/movies", "http://dev.darklightz.com/static/img")
-		if not picture:
-			picture = "http://myoor.com/wp-content/uploads/2013/06/Vijayakanth-1.jpg"
-		temp['image'] = picture
-		temp['date']  = article['dateCreated']
-		temp['section'] = 'Cine News'
-		response['news_articles'].append(temp)
+def get_reviews(request):
+	page = request.GET.get('page', 'homepage')
+	review_id = request.GET.get('review_id', '')
 
-	reviews  = serializers.serialize("json", Reviews.objects.order_by('dateCreated'))
-	reviews  = eval(reviews)
-	response.setdefault('reviews', [])
+	if page == "homepage":
+		reviews = Reviews.objects.all().order_by('-dateCreated')[2:12]
+	elif page == "details":
+		reviews = Reviews.objects.filter(id=review_id)
+	else:
+		print "Need to add condition here"	
 
+	
+	response = []
 	for review in reviews:
-		temp = {}
-		review = review['fields']
-		temp['title'] = review['review_title']
-		temp['id'] = review['movie']
-		picture = review.get('display_picture', '').replace("templates/static/img/movies", "http://dev.darklightz.com/static/img")
-		if not picture: 
-			picture = "http://myoor.com/wp-content/uploads/2013/06/Vijayakanth-1.jpg"
-		temp['image'] 	= picture
-		temp['date']  	= review.get('dateCreated') 
-		temp['rating'] 	= review.get('rating', '8')
-		temp['hits']	= review.get('hits', '')
-		temp['section'] = 'Reviews'
-		response['reviews'].append(temp)
-	
-	
-	nadigan_spl = serializers.serialize("json", Nadigan_Special.objects.order_by('dateCreated'))
-	nadigan_spl = eval(nadigan_spl)
-	response.setdefault('nadigan_spl', [])
-
-	for spl in nadigan_spl:
-		temp = {}
-		temp['id'] = spl['pk']
-		spl  = spl['fields']
-		temp['title'] = article['title']
-		picture = article.get('display_picture', '').replace("templates/static/img/movies", "http://dev.darknightz/static/img")
-		if not picture:
-			picture = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10751620_837370909618714_1594550844_n.jpg"
-		temp['image'] = picture
-		temp['date']  = article['dateCreated']
-		temp['section'] = '360 Special'
-		response['nadigan_spl'].append(temp)
-
-	personality_gallery = serializers.serialize("json", Personality_Gallery.objects.order_by('dateCreated'))
-	personality_gallery = eval(personality_gallery)
-	response.setdefault('gallery', [])
-
-	for image in personality_gallery:
-		temp = {}
-		image = image['fields']
-		temp['id'] = image['personality']
-		temp['title'] = image['title']
-		picture = image.get('image_url', '').replace("templates/static/img/movies", "http://nd360.niranjanfellow.biz/static/images")
-		if not picture:
-			picture = "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10751620_837370909618714_1594550844_n.jpg"
-		temp['image']   = picture
-		temp['date']    = image['dateCreated']
-		temp['section'] = 'gallery'
-		response['gallery'].append(temp)
-
-
-	topsection = []
-	for section in ['reviews', 'news_articles']:
-		temp = response[section]
-		for i in [0, 1, 2]:
-			topsection.append(temp[i])
-			response[section].remove(temp[i])
-	topsection.append(response['gallery'][1])
-	response.setdefault('topsection', topsection)
+		temp = dict(id = review.id, review_title = review.review_title, review_text = "this is test text !!" * 30, section="Reviews")
+		response.append(temp)
 	
 	http_response = _get_http_response(json.dumps(response))
-    	http_response['Access-Control-Allow-Origin'] = "*"
+        http_response['Access-Control-Allow-Origin'] = "*"
 
-	return http_response
+        return http_response
+
+
+def get_news(request):
+	page = request.GET.get('page', 'homepage')
+        article_id = request.GET.get('article_id', '')
+
+        if page == "homepage":
+                news_article = News_article.objects.all().order_by('-dateCreated')[2:12]
+        elif page == "details":
+                news_article = News_article.objects.filter(id=article_id)
+        else:
+                print "Need to add condition here"
+
+        response = []
+        for news in reviews:
+		temp = dict(id = news.id, title = news.title, display_picture = news.display_picture, interactionCount = news.interactionCount, section = "CineNews")
+                response.append(temp)
+
+        http_response = _get_http_response(json.dumps(response))
+        http_response['Access-Control-Allow-Origin'] = "*"
+
+        return http_response
+
+
+def gallery(request):
+	page = request.GET.get('page', 'homepage')
+        gallery_id = request.GET.get('gallery_id', '')
+        
+        if page == "homepage":
+                news_article = Movie_Gallery.objects.all().order_by('-dateCreated')[2:12]
+        elif page == "details":
+                news_article = Movie_Gallery.objects.filter(id=gallery_id)
+        else:
+                print "Need to add condition here"
+        
+        response = []
+        for news in reviews:
+		news = dict(id = news.id, title = news.title, movie_id = news.movie_id)
+                response.append(temp)
+
+        http_response = _get_http_response(json.dumps(response))
+        http_response['Access-Control-Allow-Origin'] = "*"
+
+        return http_response
+
+
+def home(request):
+	print "Came here"

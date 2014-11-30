@@ -10,71 +10,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/font-awesome.min.css">
 		<!--[if IE 8]>
 			<link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome-ie7.min.css">
 		<![endif]-->
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/vendor/prettyPhoto/css/prettyPhoto.css">
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/prettyPhoto.css">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lato:300,400,700,400italic,700italic|Droid+Serif' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/css/base.css">
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/css/components.css">
-		<link rel="stylesheet" href="http://html.coolorize.com/summarize/colorschemes/default.css">
-		<script src="http://html.coolorize.com/summarize/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/base.css">
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/components.css">
+		<link rel="stylesheet" href="http://dev.darklightz.com/static/css/default.css">
+		<script src="http://dev.darklightz.com/static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 		<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 				 var js, fjs = d.getElementsByTagName(s)[0];
 				 if (d.getElementById(id)) return;
 					 js = d.createElement(s); js.id = id;
-					 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=115242932010815&version=v2.0";
+					 js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=115242932010815&version=v2.0";
 					 fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-		<script>
-		(function() {
-		  var flickerAPI = "http://dev.darklightz.com/";
-		  $.getJSON( flickerAPI, {
-		    format: "json"
-		  })
-		    .done(function( data ) {
-			var top_section_main = data.topsection[1]
-			var top_section = '<article class="entry style-grid style-hero hero-md-largest type-post col-md-8 col-lg-12 colheight-sm-1 colheight-md-2 colheight-lg-2 colheight-xl-2"><div class="ribbon ribbon-pulled ribbon-small ribbon-highlight"><a href="blog.html">' + top_section_main.section + '</a></div><header class="entry-header"><h3 class="entry-title"><a href="single.html">' + top_section_main.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">' + top_section_main.date + '</time></a></span></div> </header><figure class="entry-thumbnail"><a href="single.html" class="overlay overlay-primary"></a><img src="'+ top_section_main.image  + '" alt=""></figure> </article>';
-			$("#top_section").append(top_section);
-
-            $.each(data.topsection.slice(2, 4), function(i, item) {
-                var top_section_1 = '<article class="entry style-grid style-hero type-post col-md-4 col-lg-6 colheight-sm-1"><div class="ribbon ribbon-pulled ribbon-small ribbon-highlight"><a href="">'+ item.section + '</a></div><header class="entry-header"><h3 class="entry-title"><a href="single.html">' + item.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">' + item.date + '</time></a></span></div></header><figure class="entry-thumbnail"><a href="single.html" class="overlay overlay-primary"></a><img src="' + item.image + '" width="480" height="280" alt=""></figure></article>'
-                $("#top_section").append(top_section_1);
-            });
-
-            var top_section_main1 = data.topsection[5]
-            var top_section_3 = '<article class="entry style-grid style-hero hero-lg-larger type-post col-md-4 col-lg-6 colheight-sm-1 colheight-lg-2"><div class="ribbon ribbon-pulled ribbon-small ribbon-highlight"><a href="">'+ top_section_main1.section + '</a></div><header class="entry-header"><h3 class="entry-title"><a href="single.html">' + top_section_main1.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">' + top_section_main1.date + '</time></a></span></div></header><figure class="entry-thumbnail"><a href="single.html" class="overlay overlay-primary"></a><img src="' + top_section_main1.image + '" width="480" height="280" alt=""></figure></article>'
-                $("#top_section1").append(top_section_3);
-
-
-            $.each(data.topsection.slice(4, 7), function(i, item) {
-                var top_section_2 = '<article class="entry style-grid style-hero type-post col-md-4 col-lg-6 colheight-sm-1"><div class="ribbon ribbon-pulled ribbon-small ribbon-highlight"><a href="">'+ item.section + '</a></div><header class="entry-header"><h3 class="entry-title"><a href="single.html">' + item.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">' + item.date + '</time></a></span></div></header><figure class="entry-thumbnail"><a href="single.html" class="overlay overlay-primary"></a><img src="' + item.image + '" width="480" height="280" alt=""></figure></article>'
-                $("#top_section1").append(top_section_2);
-            });
-
-            $.each(data.topsection.slice(6, 7), function(i, item) {
-                var top_section_2 = '<article class="entry style-grid style-hero type-post col-md-6 col-lg-6 colheight-sm-1"><div class="ribbon ribbon-pulled ribbon-small ribbon-highlight"><a href="">'+ item.section + '</a></div><header class="entry-header"><h3 class="entry-title"><a href="single.html">' + item.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">' + item.date + '</time></a></span></div></header><figure class="entry-thumbnail"><a href="single.html" class="overlay overlay-primary"></a><img src="' + item.image + '" width="480" height="280" alt=""></figure></article>'
-                $("#top_section1").append(top_section_2);
-            });
-
-             $.each(data.reviews , function(i, item) {
-                var reviews_section = '<div class="entries"><article class="entry style-large type-post"><figure class="entry-thumbnail hidden-xs"><a href="single.html"><img src="'+ item.image +'"  width="680" height="452" alt=""></a></figure><header class="entry-header"><h3 class="entry-title"><a href="single.html" rel="bookmark">'+ item.title + '</a></h3><div class="entry-meta"><span class="entry-date"><a href="blog.html">on <time datetime="2013-07-04T23:26:34+00:00">' + item.date + '</time></a></span></div></header>' + item.hits.substr(0, 400) +'</article>'
-                $("#reviews").append(reviews_section);
-            });
-
-            $.each(data , function(i, item) {
-                $.each(item , function(i, itm){
-                    console.log(itm.title);
-                });
-            });
-		    });
-		})();
-		</script>
-
 	</head>
 	<body>
 		<h1 class="sr-only">Nadigan 360</h1>
@@ -125,7 +80,6 @@
 					<div class="row" id="top_section1">
 					</div><!--/.row-->
 				</div>
-
 			</div><!--/section.row.entries-->
 
 			<div id="content" class="content section row">
@@ -133,214 +87,8 @@
 					<div class="row">
 						<div class="col-md-4 col-lg-4 md-pull-right">
 							<aside class="widget">
-								<h2 class="widget-title ribbon ribbon-focus"><span>What's New</span></h2>
-								<div class="entries row">
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_1.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_1.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">3 hours ago</time></a></span>
-											</div>
-										</div>
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_2.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_2.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">4 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_3.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_3.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Excepteur sint occaecat cupidatat non proident.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">5 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_4.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_4.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">6 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_5.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_5.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">7 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_6.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_6.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Excepteur sint occaecat cupidatat non proident.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">8 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_7.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_7.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">9 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_8.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_8.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">10 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_9.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_9.jpg" alt="">
-										</noscript>
-
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Excepteur sint occaecat cupidatat non proident.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">11 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
-
-									<article class="type-post style-media-list media col-sm-6 col-md-12">
-
-										<!-- to disable lazy loading, remove data-src and data-src-retina -->
-										<img src="../img/placeholder.gif" data-src="../uploads/80x80_10.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
-										<!--fallback for no javascript browsers-->
-										<noscript>
-											<img src="../uploads/80x80_10.jpg" alt="">
-										</noscript>
-										<div class="media-body">
-											<h3  class="entry-title">
-												<a href="single.html" rel="bookmark">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
-											</h3>
-											<div class="entry-meta">
-												<span class="entry-date"><a href="blog.html"><time datetime="2013-07-04T23:26:34+00:00">12 hours ago</time></a></span>
-											</div>
-										</div>
-
-									</article>
+								<h2 class="widget-title ribbon ribbon-focus"><span>Reviews+</span></h2>
+								<div class="entries row" id="extra_reviews">
 
 								</div>
 
@@ -394,11 +142,8 @@
 								</ul>
 
 							</aside><!--/.widget-->
-
 							<aside class="widget">
-
 								<h3 class="widget-title ribbon ribbon-focus"><span>TAGS</span></h3>
-
 								<div class="tagcloud">
 									<a href="#">Some</a>
 									<a href="#">Tag</a>
@@ -428,9 +173,7 @@
 									<a href="#">Magna </a>
 									<a href="#">Aliqua</a>
 								</div>
-
 							</aside><!--/.widget-->
-
 						</div><!--/.col-md-4.col-lg-4.md-pull-right-->
 						<div class="bg-base col-md-8 col-lg-8">
 							<h2 class="section-title ribbon ribbon-highlight"><span>What's Hot</span></h2>
@@ -441,34 +184,25 @@
 				</div><!--/.col-md-8.col-lg-4-->
 
 				<div class="sidebar col-md-3 col-lg-3">
-						
 					<aside class="widget">
-
 						<h2 class="widget-title ribbon"><span>Latest Review</span></h2>
-
 						<div class="entries row">
-
 							<article class="type-post style-media-list style-review-list media col-sm-6 col-md-12">
-
 								<div class="style-review-score">
 									80
 								</div>
-
 								<!-- to disable lazy loading, remove data-src and data-src-retina -->
 								<img src="../img/placeholder.gif" data-src="../uploads/80x80_6.jpg" data-src-retina="../uploads/160x160_2.jpg" width="80" height="80" class="media-object pull-left" alt="">
-
 								<!--fallback for no javascript browsers-->
 								<noscript>
 									<img src="../uploads/80x80_6.jpg" alt="">
 								</noscript>
-
 								<div class="media-body">
 									<h3  class="entry-title">
 										<a href="single-full.html" rel="bookmark">xPhone 15s</a>
 									</h3>
 									<p class="small">xPhone Designer: The most secure xPhone Ever?</p>
 								</div>
-
 							</article>
 
 							<article class="type-post style-media-list style-review-list media col-sm-6 col-md-12">
@@ -537,7 +271,6 @@
 									</h3>
 									<p class="small">Deserunt laborum sunt in culpa qui officia  mollit anim id est </p>
 								</div>
-
 							</article>
 
 							<article class="type-post style-media-list style-review-list media col-sm-6 col-md-12">
@@ -1189,26 +922,17 @@
 						</ul>
 
 					</div><!--/.col-3-->
-
 					<div class="widget col-xs-6 col-sm-2">
-
 						<h4 class="widget-title">Follow Us</h4>
-
 						<ul class="entries links">
 							<li><a href="blog.html"><i class="icon-facebook-sign icon-2x"></i> Facebook</a></li>
 							<li><a href="blog.html"><i class="icon-twitter-sign icon-2x"></i> Twitter</a></li>
-							<li><a href="blog.html"><i class="icon-google-plus-sign icon-2x"></i> Google Plus</a></li>
-							<li><a href="blog.html"><i class="icon-linkedin-sign icon-2x"></i> Linkedin</a></li>
 						</ul>
 
 					</div><!--/.col-3-->
-
 					<div class="clearfix visible-xs"></div>
-
 					<div class="widget col-xs-12 col-sm-4">
-
 						<h4 class="widget-title">Subscribe</h4>
-
 						<form class="form-horizontal" role="form">
 							<div class="form-group">
 								<label for="subscribeEmail" class="col-lg-2 control-label">EMAIL</label>
@@ -1226,35 +950,22 @@
 								</div>
 							</div>
 						</form>
-
 					</div><!--/.col-3-->
-
 				</div><!--row.-->
-
 			</div>
-
 			<div class="footer-bottom">
-
 				<div class="container aligncenter">
-
 					<p>&copy;2013 by <a href="http://coolorize.com">Coolorize Network</a>. All Right Reserved. <p>
-
 				</div>
-
 			</div>
-
 		</footer>
-		
-		<script src="http://html.coolorize.com/summarize/vendor/jquery-1.10.1.min.js"></script>
-		<!--
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="../vendor/jquery-1.10.1.min.js"><\/script>')</script>
-	-->
-
-		<script src="http://html.coolorize.com/summarize/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="http://html.coolorize.com/summarize/vendor/prettyPhoto/jquery.prettyPhoto.js"></script>
-		<script src="http://html.coolorize.com/summarize/vendor/jquery.unveil.min.js"></script>
-		<script src="http://html.coolorize.com/summarize/js/main.js"></script>
+		<script src="/static/js/jquery-1.11.1.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/jquery.prettyPhoto.js"></script>
+		<script src="/static/js/jquery.unveil.min.js"></script>
+		<script src="/static/js/main.js"></script>
+		<script src="/static/js/test.js"></script>
+		<script src="/static/js/reviews.js"></script>
 
 	</body>
 </html>

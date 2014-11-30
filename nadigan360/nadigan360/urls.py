@@ -7,6 +7,10 @@ admin.autodiscover()
 urlpatterns = patterns('nd360.views',
     # Examples:
     url(r'^$', 'home', name='home'),
+    url(r'^reviews/$', 'get_reviews', name="get_reviews"),
+    url(r'^topsection/$', 'get_topsection', name="get_topsection"),
+    url(r'^newsarticles/$', 'get_news', name="get_news"),
+    url(r'^events/$', 'get_events', name="get_events"),
     #url(r'^$', 'nadigan360.views.home', name='home'),
     # url(r'^nadigan360/', include('nadigan360.foo.urls')),
 

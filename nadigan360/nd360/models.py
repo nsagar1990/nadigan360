@@ -2,6 +2,7 @@ from django.db import models
 from nadigan360.settings import *
 from datetime import *
 
+STATIC_DIRS = os.path.join(PROJECT_DIR, 'templates', 'static', 'img')
 
 RATINGS = (
 	   (u'0', u'0'),
@@ -48,7 +49,7 @@ class Movie(models.Model):
 	inLanguage	    = models.CharField(max_length=255)
 	interactionCount    = models.IntegerField()
 	keywords	    = models.ManyToManyField('Keywords')
-	thumbnailUrl	    = models.ImageField(upload_to='templates/static/img/movies')
+	thumbnailUrl	    = models.ImageField(upload_to=STATIC_DIRS)
 	description	    = models.TextField()
 	url		    = models.CharField(max_length=255)
 	facebook_page	    = models.CharField(max_length=255)
