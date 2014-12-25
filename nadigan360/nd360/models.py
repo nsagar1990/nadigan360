@@ -2,7 +2,7 @@ from django.db import models
 from nadigan360.settings import *
 from datetime import *
 
-STATIC_DIRS = os.path.join(PROJECT_DIR, 'templates', 'static', 'img')
+imge_uploading_directory = os.path.join(STATICFILES_DIRS[0], 'img')
 
 RATINGS = (
 	   (u'0', u'0'),
@@ -49,7 +49,7 @@ class Movie(models.Model):
 	inLanguage	    = models.CharField(max_length=255)
 	interactionCount    = models.IntegerField()
 	keywords	    = models.ManyToManyField('Keywords')
-	thumbnailUrl	    = models.ImageField(upload_to=STATIC_DIRS)
+	thumbnailUrl	    = models.ImageField(upload_to=imge_uploading_directory)
 	description	    = models.TextField()
 	url		    = models.CharField(max_length=255)
 	facebook_page	    = models.CharField(max_length=255)
@@ -97,7 +97,7 @@ class Movie_Gallery(models.Model):
 
 class Movie_Photo(models.Model):
 	gallery 		= models.ForeignKey('Movie_Gallery')
-	image			= models.ImageField(upload_to='templates/static/img/movies')
+	image			= models.ImageField(upload_to=imge_uploading_directory)
 	description 		= models.TextField()
 	dateCreated             = models.DateField()
 	dateModified            = models.DateField()
@@ -115,7 +115,7 @@ class News_Article(models.Model):
 	movie           	= models.ForeignKey('Movie')
 	title			= models.CharField(max_length=255)
 	text			= models.TextField()
-	display_picture		= models.ImageField(upload_to='templates/static/img/movies')
+	display_picture		= models.ImageField(upload_to=imge_uploading_directory)
 	interactionCount        = models.IntegerField()
 	dateCreated             = models.DateField()
         dateModified            = models.DateField()
@@ -128,7 +128,7 @@ class Nadigan_Special(models.Model):
 	title			= models.CharField(max_length=255)
 	text 			= models.TextField() 
 	keywords 		= models.ManyToManyField('Keywords')
-	display_picture 	= models.ImageField(upload_to='templates/static/img/movies')
+	display_picture 	= models.ImageField(upload_to=imge_uploading_directory)
 	video_url 		= models.CharField(max_length=255)
 	dateCreated             = models.DateField()
         dateModified            = models.DateField()
@@ -161,14 +161,14 @@ class Personality(models.Model):
 class Personality_Gallery(models.Model):
 	personality 		= models.ForeignKey('Personality')
 	title 	    		= models.CharField(max_length=255)	
-	image_url   		= models.ImageField(upload_to='templates/static/img/movies')
+	image_url   		= models.ImageField(upload_to=imge_uploading_directory)
 	description 		= models.TextField()
 	dateCreated             = models.DateField()
         dateModified            = models.DateField()
 
 class Personality_Photos(models.Model):
 	gallery         	= models.ForeignKey('Personality_Gallery')
-        image           	= models.ImageField(upload_to='templates/static/img/movies')
+        image           	= models.ImageField(upload_to=imge_uploading_directory)
         description     	= models.TextField()
 	dateCreated             = models.DateField()
         dateModified            = models.DateField()
@@ -176,7 +176,7 @@ class Personality_Photos(models.Model):
 class Organisation(models.Model):
 	id   			= models.AutoField(primary_key=True)
 	name 			= models.CharField(max_length=255)
-	display_picture 	= models.ImageField(upload_to='templates/static/img/movies') 
+	display_picture 	= models.ImageField(upload_to=imge_uploading_directory) 
 	twitter_handle 		= models.TextField()
 	facebook_page 		= models.TextField()
 	dateCreated             = models.DateField()
