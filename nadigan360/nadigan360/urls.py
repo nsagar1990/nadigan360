@@ -5,18 +5,16 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('nd360.views',
-    # Examples:
-    url(r'^$', 'home', name='home'),
-    url(r'^reviews/$', 'get_reviews', name="get_reviews"),
-    url(r'^topsection/$', 'get_topsection', name="get_topsection"),
-    url(r'^newsarticles/$', 'get_news', name="get_news"),
-    url(r'^events/$', 'get_events', name="get_events"),
-    #url(r'^$', 'nadigan360.views.home', name='home'),
-    # url(r'^nadigan360/', include('nadigan360.foo.urls')),
+	# Examples:
+    	url(r'^$', 'home', name='home'),
+    	#url(r'^$', 'nadigan360.views.home', name='home'),
+    	#url(r'^nadigan360/', include('nadigan360.foo.urls')),
+	url(r'home_data/$', 'home_data', name="home_data"),
+	url(r'gallery/(?P<gallery_id>\d+)/$', 'gallery', name="gallery"),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    	# Uncomment the admin/doc line below to enable admin documentation:
+    	# url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-    # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+   	# Uncomment the next line to enable the admin:
+    	url(r'^admin/', include(admin.site.urls)),
 )
