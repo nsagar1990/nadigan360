@@ -1,7 +1,7 @@
 apt-get update 
 apt-get install git
 apt-get install python-pip
-pip install django
+pip install django==1.5
 git clone https://github.com/nsagar1990/nadigan360.git
 sudo apt-get install nginx
 pip install South
