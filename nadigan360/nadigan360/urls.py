@@ -5,13 +5,24 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('nd360.views',
-	# Examples:
     	url(r'^$', 'home', name='home'),
-    	#url(r'^$', 'nadigan360.views.home', name='home'),
-    	#url(r'^nadigan360/', include('nadigan360.foo.urls')),
 	url(r'home_data/$', 'home_data', name="home_data"),
+
+	#reviews
+	url(r'^reviews/(?P<review_id>\d+)/$', 'reviews', name="reviews"),		
+	url(r'^reviews', 'all_reviews', name='all_reviews'),
+
+	#Cinenews
+	url(r'^cinenews/(?P<article_id>\d+)/$', 'cinenews', name='cinenews'),
+	url(r'^cinenews', 'all_cinenews', name="all_cinenews"),
+
+	#360specials
+	url(r'^360specials', 'nadigan360', name="nadigan360"),
+	url(r'^360specials/(?P<article_id>\d+)/$', 'nadigan_spl', name='nadigan_spl'),
+
+	#gallery
+	url(r'gallery', 'galleries', name="galleries"),
 	url(r'gallery/(?P<gallery_id>\d+)/$', 'gallery', name="gallery"),
-	url(r'reviews/(?P<review_id>\d+)/$', 'reviews', name="reviews"),		
 
    	# Uncomment the next line to enable the admin:
     	url(r'^admin/', include(admin.site.urls)),
