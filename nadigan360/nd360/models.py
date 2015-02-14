@@ -77,6 +77,7 @@ class Reviews(models.Model):
 	review_text      	= models.TextField()
 	hits	    	 	= models.TextField()
 	misses	    		= models.TextField()
+	rating			= models.IntegerField()
 	interactionCount    	= models.IntegerField()
 	dateCreated         	= models.DateField()
         dateModified        	= models.DateField() 	
